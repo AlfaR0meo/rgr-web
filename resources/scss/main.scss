@@ -64,15 +64,20 @@ h1 {
 
 .section {
     padding-block: 2rem;
-    
+
     &_home {
         min-height: 100vh;
+
+        background: dodgerblue url("./../img/home/111.jpg") center / cover;
     }
 }
 
 
 .content {
     line-height: 1.7;
+    p:not(:last-child) {
+        margin-bottom: 2em;
+    }
 }
 
 
