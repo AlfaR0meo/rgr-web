@@ -17,6 +17,8 @@
 <body>
     <div class="page-wrapper">
 
+        @include("resources.views.blocks.nav")
+
         Home page
 
 
