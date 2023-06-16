@@ -35,8 +35,8 @@
                 <li class="nav__item">
                     <a class="nav__link" href="#">Карта сайта</a>
                 </li>
-                <li>
-                    <select data-lang name="" id="">
+                <li class="nav__item">
+                    <select data-lang-select>
                         <option value="ru">ru</option>
                         <option value="en">en</option>
                     </select>
