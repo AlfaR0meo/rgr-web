@@ -9,7 +9,7 @@
                     <a class="nav__link" href="{{ url('/news') }}" data-text="news_special_offers"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="products"></a>
+                    <a class="nav__link" href="{{ url('/products') }}" data-text="products"></a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="#" data-text="contacts"></a>
