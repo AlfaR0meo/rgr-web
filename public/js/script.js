@@ -1,2 +1,5 @@
-console.log("home page");
-console.log(window.location);
+const langSelectElement = document.querySelector('[data-lang]');
+
+langSelectElement.addEventListener('change', () => {
+    console.log(langSelectElement.value)
+})
