@@ -9,7 +9,7 @@ return new class extends Migration {
         Schema::create('special_offers', function (Blueprint $table) {
             $table->id();
             $table->string("title");
-            $table->string("text");
+            $table->longText("text");
             $table->string("image_path");
             $table->timestamps();
         });
