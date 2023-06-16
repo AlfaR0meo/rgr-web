@@ -14,9 +14,13 @@ class Order extends Model {
             $result = Order::all();
 
             foreach($result as $key => $value) {
-                $result[$key]["products"] = [];
+                // dd($result[$key]);
+
+                $attributes = $result[$key]["attributes"];
+
+                $attributes["products"] = [];
                 $product_ids = [];
-                foreach(explode($result[$key]["product_ids"], ",") as $product_id) {
+                foreach(explode(",", $result[$key]["product_ids"]) as $product_id) {
                     if (array_key_exists($product_id, $product_ids)) {
                         $product_ids[$product_id]++;
                     } else {
@@ -26,12 +30,20 @@ class Order extends Model {
 
                 foreach($product_ids as $product_id => $product_count) {
                     $product = Product::find($product_id);
-                    array_push($result[$key]["products"], [
+                    $products = $attributes["products"];
+                    array_push($products, [
                         'count' => $product_count,
                         'cost' => $product_count * $product["cost"],
                         'name' => $product["name"]
                     ]);
+
+                    
+                    $attributes["products"] = $products;
+                    
                 }
+                
+                $result[$key]["attributes"] = $attributes;
+                // dd($products);
             }
 
             return $result;
