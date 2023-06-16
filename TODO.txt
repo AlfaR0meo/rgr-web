@@ -1,0 +1,12 @@
+User:
+    home
+    news
+    products
+    contacts
+    cart
+    instruments 
+    accessories
+    feedback
+    support
+    location 
+    map
