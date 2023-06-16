@@ -45,20 +45,15 @@
 }
 
 body {
-    font-family: var(--ff-system, sans-serif);
+    font-family: "Merriweather", serif;
 }
 
 h1 {
-    margin-bottom: .5em;
-    padding: 1em;
-
-    font-size: var(--fz-900);
+    font-size: 5rem;
     font-weight: 700;
     text-align: center;
 
-    color: limegreen;
-
-    background-color: hsl(0 0% 0% / .1);
+    color: white;
 }
 
 
@@ -66,6 +61,9 @@ h1 {
     padding-block: 2rem;
 
     &_home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         min-height: 100vh;
 
         background: dodgerblue url("./../img/home/111.jpg") center / cover;

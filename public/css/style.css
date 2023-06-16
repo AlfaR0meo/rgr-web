@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* ■■■■■ ШРИФТЫ ■■■■■■■■■■■■■■■■■■■■■■ */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
 /* ■■■■■ ОБНУЛЯЮЩИЕ СТИЛИ ■■■■■■■■■■■■ */
 body {
   margin: 0;
@@ -91,7 +90,7 @@ body {
   width: 100%;
   padding-block: 1em;
   font-size: var(--fz-400);
-  background-color: hsl(var(--clr-gold-400)/0.5);
+  background-color: hsla(0deg, 0%, 0%, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -102,15 +101,15 @@ body {
 }
 .nav__link {
   display: block;
-  padding: 1em;
-  color: black;
-  font-weight: 500;
-  background-color: hsla(0deg, 0%, 100%, 0.3);
+  padding: 0.5em 1em;
+  color: white;
   transition: 200ms;
+  border: 1px solid white;
 }
 @media (any-hover: hover) {
   .nav__link:hover {
-    background-color: hsl(0deg, 0%, 98%);
+    color: black;
+    background-color: #fff;
   }
 }
 
@@ -140,23 +139,23 @@ body {
 }
 
 body {
-  font-family: var(--ff-system, sans-serif);
+  font-family: "Merriweather", serif;
 }
 
 h1 {
-  margin-bottom: 0.5em;
-  padding: 1em;
-  font-size: var(--fz-900);
+  font-size: 5rem;
   font-weight: 700;
   text-align: center;
-  color: limegreen;
-  background-color: hsla(0deg, 0%, 0%, 0.1);
+  color: white;
 }
 
 .section {
   padding-block: 2rem;
 }
 .section_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   background: dodgerblue url("./../img/home/111.jpg") center/cover;
 }
