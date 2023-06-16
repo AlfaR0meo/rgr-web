@@ -4,3 +4,4 @@
 <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="./css/style.css">
 <script src="./js/script.js" defer></script>
+<script src="./js/change_language.js" defer></script>
