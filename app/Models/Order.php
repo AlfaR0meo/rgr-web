@@ -13,10 +13,10 @@ class Order extends Model {
         public static function getOrders() {
             $result = Order::all();
 
-            foreach($result as $key => $value) {
-                $result[$key]["products"] = [];
+            foreach($result as $key => $order) {
+                $order["products"] = [];
                 $product_ids = [];
-                foreach(explode($result[$key]["product_ids"], ",") as $product_id) {
+                foreach(explode(",", $result[$key]["product_ids"]) as $product_id) {
                     if (array_key_exists($product_id, $product_ids)) {
                         $product_ids[$product_id]++;
                     } else {
@@ -26,12 +26,18 @@ class Order extends Model {
 
                 foreach($product_ids as $product_id => $product_count) {
                     $product = Product::find($product_id);
-                    array_push($result[$key]["products"], [
+                    $products = $order["products"];
+                    array_push($products, [
                         'count' => $product_count,
                         'cost' => $product_count * $product["cost"],
                         'name' => $product["name"]
                     ]);
+
+                    
+                    $order["products"] = $products;
+                    
                 }
+                $result[$key] = $order;
             }
 
             return $result;

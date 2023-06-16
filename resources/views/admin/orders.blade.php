@@ -7,9 +7,11 @@
 
         let text = await response.text();
         debugger;
-        let JSON = JSON.parse(text);
+        let orders = JSON.parse(text);
         debugger;
     }
+
+    testOrders();
 
 
 </script>
