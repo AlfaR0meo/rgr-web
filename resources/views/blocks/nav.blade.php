@@ -2,10 +2,10 @@
     <div class="nav__container">
         <ul class="nav__list">
             <li class="nav__item">
-                <a class="nav__link" href="{{ url('/home') }}"">Главная</a>
+                <a class="nav__link" href="{{ url('/home') }}">Главная</a>
             </li>
             <li class="nav__item">
-                <a class="nav__link" href="{{ url('/news') }}"">Новости и акции</a>
+                <a class="nav__link" href="{{ url('/news') }}">Новости и акции</a>
             </li>
             <li class="nav__item">
                 <a class="nav__link" href="#">Товары</a>
