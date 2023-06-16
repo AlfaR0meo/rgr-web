@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return redirect('/home');
 });
 
 Route::get('/home', 'HomeController@get');
@@ -28,3 +28,6 @@ Route::get('/feedback', 'FeedbackController@get');
 Route::get('/support', 'SupportController@get');
 Route::get('/location', 'LocationController@get'); 
 Route::get('/map', 'MapController@get');
+
+
+Route::get('/async/get_products', 'CartController@getProducts');
