@@ -111,6 +111,7 @@ body {
 }
 .nav__item:last-child {
   position: relative;
+  cursor: pointer;
 }
 .nav__item:last-child::before {
   content: "";
