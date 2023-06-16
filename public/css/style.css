@@ -86,6 +86,36 @@ body {
   display: none !important;
 }
 
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  font-size: var(--fz-400);
+  background-color: hsl(var(--clr-gold-400)/0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em 1.4em;
+}
+.nav__link {
+  display: block;
+  padding: 0.65em;
+  color: black;
+  font-weight: 500;
+  background-color: hsla(0deg, 0%, 100%, 0.3);
+  transition: 200ms;
+}
+@media (any-hover: hover) {
+  .nav__link:hover {
+    background-color: hsl(0deg, 0%, 98%);
+  }
+}
+
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
 :root {
   --ff-body: "Lora", sans-serif;
@@ -121,35 +151,15 @@ h1 {
   font-size: var(--fz-900);
   font-weight: 700;
   text-align: center;
-  color: black;
+  color: limegreen;
   background-color: hsla(0deg, 0%, 0%, 0.1);
 }
 
-.nav {
-  padding-block: 1em;
-  margin-bottom: 2em;
-  font-size: var(--fz-400);
-  background-color: hsl(var(--clr-gold-400)/0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+.section {
+  padding-block: 2rem;
 }
-.nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7em 1.4em;
-}
-.nav__link {
-  display: block;
-  padding: 0.65em;
-  color: black;
-  font-weight: 500;
-  background-color: hsla(0deg, 0%, 100%, 0.3);
-  transition: 200ms;
-}
-@media (any-hover: hover) {
-  .nav__link:hover {
-    background-color: hsl(0deg, 0%, 98%);
-  }
+.section_home {
+  min-height: 100vh;
 }
 
 .content {

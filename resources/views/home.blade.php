@@ -16,19 +16,25 @@
     <meta>
 </head>
 <body>
-    @include("blocks.nav")
     <div class="page-wrapper">
         
+        @include("blocks.nav")
 
-        <section>
-            
-        </section>
-        <div class="container">
-            <h1>Главная</h1>
-            <div class="content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus tenetur doloribus tempore excepturi necessitatibus quaerat, ea dolor molestiae cumque magni itaque dolores praesentium, totam, vitae sit omnis esse beatae impedit quidem quia quae officiis maxime enim? Nesciunt praesentium nostrum, officia illum quae vitae ratione sunt vel perferendis id, neque omnis similique consequuntur eos architecto veritatis voluptatem assumenda ipsa officiis veniam? Cumque magnam tempore, rerum, ratione perferendis ex voluptatibus doloremque quia repudiandae, veniam qui consequatur. Dignissimos, quia asperiores! Perspiciatis cum magnam nesciunt eius minima quasi excepturi sequi vero consequatur atque, exercitationem, ducimus officia accusamus dolor quae iusto alias repudiandae sit facere sunt consequuntur neque praesentium ipsa! Rerum odio temporibus voluptas accusamus sit, cum minima tenetur corporis beatae sint! Porro provident rerum, sit repudiandae nisi incidunt? Excepturi aliquid ab incidunt repellendus tenetur accusamus molestiae inventore quasi rem dignissimos. Ullam error, magnam in quidem porro veritatis totam animi distinctio incidunt commodi autem maxime eaque assumenda laborum deserunt facilis quis maiores consectetur illum. Necessitatibus reprehenderit, commodi dolor asperiores possimus alias quibusdam obcaecati voluptatem odit repellat fuga. Quaerat, velit saepe harum magnam adipisci animi, nostrum voluptatem aliquid dicta est quis optio. Architecto aliquid voluptatum nisi natus, ipsum sunt eveniet ad. Molestiae neque odit deserunt iusto nostrum consequatur ea vel, reiciendis illum. Ipsum odio culpa ad obcaecati eveniet, perferendis ratione recusandae distinctio nesciunt, dicta dignissimos dolorem commodi qui. Harum officiis perspiciatis porro, aliquid qui rem repellendus, at dignissimos totam itaque quasi quibusdam magni, suscipit laborum a doloremque tempore neque? Unde reprehenderit animi adipisci voluptas, nostrum quos repudiandae, ipsam accusamus consectetur aliquid soluta doloribus, sunt tempore? Nam libero voluptate esse fugiat illo debitis qui deserunt tempore soluta aspernatur sed atque labore mollitia, nesciunt obcaecati perspiciatis asperiores error? Incidunt repudiandae totam itaque quia soluta porro quis repellat consequatur? Optio delectus vel commodi suscipit dolor eum dolorem ut!
+        <section class="section section_home">
+            <div class="container">
+                <h1>Главная</h1>
             </div>
-        </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente corrupti, voluptatem minus eos natus porro nobis repellendus modi hic cupiditate. Alias dolores necessitatibus atque fuga eveniet voluptatibus similique vero eaque.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus consequatur doloribus dolores porro numquam aut unde, explicabo eaque! Eius architecto ut exercitationem officia iusto sapiente quos odio esse ipsam, fugiat quibusdam vel cum, animi possimus voluptate fuga laboriosam nam praesentium quod, quisquam nesciunt minima impedit! Culpa qui dolore voluptatem maiores dolorem nam facilis voluptas quam dolores perspiciatis ut nostrum ipsa nobis ipsum, autem nemo, debitis temporibus eaque!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum tenetur velit vero quasi, possimus officiis et natus quisquam officia numquam obcaecati laudantium nostrum doloribus fugit nemo, molestias tempore quos perferendis? Adipisci quia saepe dolorum architecto earum beatae voluptatum aut numquam repellat! Ullam, illum explicabo? Minima beatae molestiae perferendis ipsa et reprehenderit ipsam, esse eius velit. Pariatur sit nobis nesciunt eligendi. Ea tempora unde laborum dolorem, necessitatibus vitae nisi nihil eveniet quas eligendi beatae delectus perspiciatis consectetur amet esse! Dignissimos velit earum recusandae officiis. Harum odio a quaerat eaque illum, sint iusto maxime minima sunt placeat ab adipisci! Dolorem, atque culpa?</p>
+                </div>
+            </div>
+        </section>
 
 
         
