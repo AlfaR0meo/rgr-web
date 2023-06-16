@@ -19,7 +19,8 @@
     }
 
     &__item {
-        border: 1px solid white;
+        border: 1px solid hsl(0 0% 100% / .5);
+        border-radius: 1em;
         transition: 200ms;
 
         &:first-child {
@@ -28,6 +29,7 @@
 
         &:last-child {
             position: relative;
+            border: none;
             cursor: pointer;
 
             button[data-lang] {
