@@ -125,6 +125,7 @@ body {
   width: 1.4em;
   aspect-ratio: 1;
   transition: 200ms;
+  pointer-events: none;
   background: url("./../img/lang_icon.svg") no-repeat center/contain;
 }
 @media (any-hover: hover) {
@@ -134,7 +135,7 @@ body {
   .nav__item:hover:last-child::before {
     filter: invert(1);
   }
-  .nav__item:hover button[data-lang] {
+  .nav__item:hover button[data-lang], .nav__item:hover .nav__link {
     color: black;
   }
 }

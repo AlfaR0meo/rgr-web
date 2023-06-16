@@ -43,6 +43,7 @@
                 width: 1.4em;
                 aspect-ratio: 1;
                 transition: 200ms;
+                pointer-events: none;
                 background: url("./../img/lang_icon.svg") no-repeat center / contain;
             }
         }
@@ -53,7 +54,7 @@
                 &:last-child::before {
                     filter: invert(1);
                 }
-                button[data-lang] {
+                button[data-lang], .nav__link {
                     color: black;
                 }
             }
