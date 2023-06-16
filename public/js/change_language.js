@@ -146,5 +146,13 @@ let strings = {
         "ru": "Некорректный способ оплаты",
         "en": "Wrong format for payment method"
     },
+    "skipped_login": {
+        "ru": "Вы пропустили поле логин",
+        "en": "Login field is required"
+    },
+    "skipped_password": {
+        "ru": "Вы пропустили поле пароль",
+        "en": "Password field is required"
+    },
     
 };

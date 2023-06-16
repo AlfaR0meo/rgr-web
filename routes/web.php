@@ -31,3 +31,7 @@ Route::get('/map', 'MapController@get');
 
 
 Route::get('/async/get_products', 'CartController@getProducts');
+
+
+Route::post('/cart', 'CartController@post');
+Route::post('/feedback', 'FeedbackController@post');
