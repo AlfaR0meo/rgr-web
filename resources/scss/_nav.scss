@@ -12,18 +12,12 @@
     
     &__list {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
         gap: 1em;
     }
 
     &__item {
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-
         border: 1px solid white;
-        background-color: transparent;
         transition: 200ms;
 
         &:last-child {
@@ -65,7 +59,7 @@
         display: block;
         padding: .7em 1em;
         color: white;
-        transition: 200ms;
         background-color: transparent;
+        transition: 200ms;
     }
 }

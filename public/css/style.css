@@ -97,16 +97,11 @@ body {
 }
 .nav__list {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 1em;
 }
 .nav__item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   border: 1px solid white;
-  background-color: transparent;
   transition: 200ms;
 }
 .nav__item:last-child {
@@ -143,8 +138,8 @@ body {
   display: block;
   padding: 0.7em 1em;
   color: white;
-  transition: 200ms;
   background-color: transparent;
+  transition: 200ms;
 }
 
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
