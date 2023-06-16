@@ -6,6 +6,15 @@
                     <a class="nav__link" href="{{ url('/home') }}">Хочу быть пользователем</a>
                 </li>
                 <li class="nav__item">
+                    <a class="nav__link" href="{{ url('/admin__news') }}">Новости админа</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="{{ url('/admin__special_offer') }}">Акции админа</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="{{ url('/admin__products') }}">Товары админа</a>
+                </li>
+                <li class="nav__item">
                     <a class="nav__link" href="{{ url('/admin__orders') }}">Заказы админа</a>
                 </li>
                 <li class="nav__item">
