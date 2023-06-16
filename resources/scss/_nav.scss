@@ -22,6 +22,10 @@
         border: 1px solid white;
         transition: 200ms;
 
+        &:first-child {
+            background-color: rebeccapurple;
+        }
+
         &:last-child {
             position: relative;
             cursor: pointer;
@@ -47,6 +51,12 @@
         @media (any-hover: hover) {
             &:hover {
                 background-color: white;
+                &:first-child {
+                    background-color: rebeccapurple;
+                    .nav__link {
+                        color: #fff;
+                    }
+                }
                 &:last-child::before {
                     filter: invert(1);
                 }

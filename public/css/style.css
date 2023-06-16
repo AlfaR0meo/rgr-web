@@ -107,6 +107,9 @@ body {
   border: 1px solid white;
   transition: 200ms;
 }
+.nav__item:first-child {
+  background-color: rebeccapurple;
+}
 .nav__item:last-child {
   position: relative;
   cursor: pointer;
@@ -129,6 +132,12 @@ body {
 @media (any-hover: hover) {
   .nav__item:hover {
     background-color: white;
+  }
+  .nav__item:hover:first-child {
+    background-color: rebeccapurple;
+  }
+  .nav__item:hover:first-child .nav__link {
+    color: #fff;
   }
   .nav__item:hover:last-child::before {
     filter: invert(1);
