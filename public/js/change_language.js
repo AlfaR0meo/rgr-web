@@ -154,5 +154,17 @@ let strings = {
         "ru": "Вы пропустили поле пароль",
         "en": "Password field is required"
     },
+    "skipped_title": {
+        "ru": "Название новости обязательно",
+        "en": "Title field is required"
+    },
+    "skipped_text": {
+        "ru": "Вы пропустили поле текст",
+        "en": "Text field is required"
+    },
+    "skipped_image": {
+        "ru": "Нужно прикрепить изображения",
+        "en": "Image field is required"
+    },
     
 };

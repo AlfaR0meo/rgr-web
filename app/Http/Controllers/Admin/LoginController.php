@@ -27,6 +27,7 @@ class LoginController extends Controller {
 
     public function logout() {
         session("isAdmin", null);
+        return view("home");
     }
 
 }

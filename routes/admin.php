@@ -9,6 +9,9 @@ Route::get('/admin__login', 'LoginController@get');
 Route::get('/admin__orders', 'OrdersController@get');
 
 Route::post('/admin__login', "LoginController@post");
-Route::post('/logout', "LoginController@logout");
+Route::post('/admin__news', "NewsController@post");
 
+
+
+Route::get('/admin__logout', "LoginController@logout");
 Route::get('/get_orders', 'OrdersController@testOrders');
