@@ -4,11 +4,16 @@
     @include('blocks.head', ['page_title' => 'accessories'])
 </head>
 <body>
-    <div class="page-wrapper">
+    <div class="page-wrapper s-p">
         
         @include("blocks.admin-nav")
 
-        <h1>Новости админа</h1>
+        <section class="section">
+            <div class="container">
+                <h1>Новости админа</h1>
+
+            </div>
+        </section>
 
 
         
