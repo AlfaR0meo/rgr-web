@@ -10,3 +10,11 @@ User:
     support
     location 
     map
+
+Admin:
+    news
+    special_offer
+    products
+    contacts
+    pages
+    login
