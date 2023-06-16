@@ -3,40 +3,40 @@
         <div class="container">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__link" href="{{ url('/home') }}">Главная</a>
+                    <a class="nav__link" href="{{ url('/home') }}" data-text="home"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="{{ url('/news') }}">Новости и акции</a>
+                    <a class="nav__link" href="{{ url('/news') }}" data-text="news_special_offers"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Товары</a>
+                    <a class="nav__link" href="#" data-text="products"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Контакты</a>
+                    <a class="nav__link" href="#" data-text="contacts"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Корзина</a>
+                    <a class="nav__link" href="#" data-text="cart"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Инструменты</a>
+                    <a class="nav__link" href="#" data-text="instruments"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Аксессуары</a>
+                    <a class="nav__link" href="#" data-text="accessories"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Обратная связь</a>
+                    <a class="nav__link" href="#" data-text="feedback"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Поддержка</a>
+                    <a class="nav__link" href="#" data-text="support"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Местоположение</a>
+                    <a class="nav__link" href="#" data-text="location"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#">Карта сайта</a>
+                    <a class="nav__link" href="#" data-text="site_map"></a>
                 </li>
                 <li class="nav__item">
-                    <button data-lang="ru" data-text="lang" type="button">ru</button>
+                    <button data-lang="ru" data-text="lang" type="button"></button>
                 </li>
             </ul>
         </div>
