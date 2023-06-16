@@ -22,7 +22,7 @@
 
         <section class="section section_home">
             <div class="container">
-                <h1>Музыкальные инструменты</h1>
+                <h1>Продажа музыкальных инструментов</h1>
             </div>
         </section>
 

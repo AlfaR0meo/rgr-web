@@ -103,13 +103,13 @@ body {
   display: block;
   padding: 0.5em 1em;
   color: white;
-  transition: 200ms;
   border: 1px solid white;
+  transition: 200ms;
 }
 @media (any-hover: hover) {
   .nav__link:hover {
     color: black;
-    background-color: #fff;
+    background-color: white;
   }
 }
 
@@ -143,14 +143,14 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
-  color: white;
+  color: #333;
 }
 
 .section {
-  padding-block: 2rem;
+  padding-block: 4rem;
 }
 .section_home {
   display: flex;
@@ -161,7 +161,7 @@ h1 {
 }
 
 .content {
-  line-height: 1.7;
+  line-height: 1.8;
 }
 .content p:not(:last-child) {
   margin-bottom: 2em;

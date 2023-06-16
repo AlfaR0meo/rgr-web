@@ -20,13 +20,13 @@
         display: block;
         padding: .5em 1em;
         color: white;
-        transition: 200ms;
         border: 1px solid white;
+        transition: 200ms;
 
         @media (any-hover: hover) {
             &:hover {
                 color: black;
-                background-color: #fff;
+                background-color: white;
             }
         }
     }

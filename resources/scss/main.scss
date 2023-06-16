@@ -49,16 +49,15 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-align: center;
-
-    color: white;
+    color: #333;
 }
 
 
 .section {
-    padding-block: 2rem;
+    padding-block: 4rem;
 
     &_home {
         display: flex;
@@ -72,7 +71,7 @@ h1 {
 
 
 .content {
-    line-height: 1.7;
+    line-height: 1.8;
     p:not(:last-child) {
         margin-bottom: 2em;
     }
