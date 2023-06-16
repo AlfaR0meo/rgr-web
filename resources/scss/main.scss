@@ -10,6 +10,9 @@
 @import "./reset";
 // ■■■■■ БАЗОВЫЕ СТИЛИ ■■■■■■■■■■■■■■■
 @import "./base";
+
+// ■■■■■ НАВИГАЦИЯ ■■■■■■■■■■■■■■■
+@import "./nav";
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
 // sass --watch resources/scss/main.scss public/css/style.css
 
@@ -39,7 +42,6 @@
 
 .page-wrapper {
     background-color: white;
-    padding-top: 200px;
 }
 
 body {
@@ -49,46 +51,31 @@ body {
 h1 {
     margin-bottom: .5em;
     padding: 1em;
+
     font-size: var(--fz-900);
     font-weight: 700;
-    color: black;
+    text-align: center;
+
+    color: limegreen;
+
     background-color: hsl(0 0% 0% / .1);
 }
 
 
-.nav {
-    z-index: 100;
-    width: 100%;
-    position: fixed;
-    padding-block: 1em;
-    font-size: var(--fz-500);
-    background-color: hsl(var(--clr-gold-400) / 0.5);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+.section {
+    padding-block: 2rem;
     
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: .7em 1.4em;
-    }
-    &__link {
-        display: block;
-        padding: .65em;
-        color: black;
-        font-weight: 500;
-        background-color: hsl(0 0% 100% / 0.3);
-        transition: 200ms;
-        @media (any-hover: hover) {
-            &:hover {
-                background-color: hsl(0 0% 98%);
-            }
-        }
+    &_home {
+        min-height: 100vh;
     }
 }
+
 
 .content {
     line-height: 1.7;
 }
+
+
 
 
 

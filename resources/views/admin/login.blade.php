@@ -17,7 +17,7 @@
 <body>
     <div class="page-wrapper">
 
-        Login admin page
+        <h1>Login admin page</h1>
 
 
         
