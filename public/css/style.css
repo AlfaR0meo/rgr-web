@@ -109,6 +109,7 @@ body {
   transition: 200ms;
 }
 .nav__item:first-child {
+  border-radius: 0;
   background-color: rebeccapurple;
 }
 .nav__item:last-child {

@@ -24,6 +24,7 @@
         transition: 200ms;
 
         &:first-child {
+            border-radius: 0;
             background-color: rebeccapurple;
         }
 
