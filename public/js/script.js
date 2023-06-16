@@ -1,5 +1,13 @@
-const langSelectElement = document.querySelector('[data-lang-select]');
+const langSelectBtn = document.querySelector('button[data-lang]');
 
-langSelectElement.addEventListener('change', () => {
-    console.log(langSelectElement.value)
+langSelectBtn.addEventListener('click', () => {
+    if (langSelectBtn.textContent === 'ru') {
+        langSelectBtn.textContent = 'en';
+        langSelectBtn.dataset.lang = 'en';
+
+    } else {
+        langSelectBtn.textContent = 'ru';
+        langSelectBtn.dataset.lang = 'ru';
+        
+    }
 })

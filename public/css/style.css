@@ -113,13 +113,16 @@ body {
   position: relative;
   cursor: pointer;
 }
+.nav__item:last-child button[data-lang] {
+  padding-left: 2.6rem;
+}
 .nav__item:last-child::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 0.7rem;
-  width: 1.4rem;
+  left: 0.7em;
+  width: 1.4em;
   aspect-ratio: 1;
   transition: 200ms;
   background: url("./../img/lang_icon.svg") no-repeat center/contain;
@@ -131,29 +134,16 @@ body {
   .nav__item:hover:last-child::before {
     filter: invert(1);
   }
-  .nav__item:hover .nav__link {
-    color: black;
-  }
-  .nav__item:hover select {
+  .nav__item:hover button[data-lang] {
     color: black;
   }
 }
-.nav__link {
+.nav__link, .nav button[data-lang] {
   display: block;
   padding: 0.7em 1em;
   color: white;
   transition: 200ms;
-}
-.nav select {
-  appearance: none;
-  padding: 0.7em 1em 0.7em 2.6rem;
-  color: white;
   background-color: transparent;
-  transition: 200ms;
-}
-.nav select option {
-  color: #000;
-  background-color: #fff;
 }
 
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */

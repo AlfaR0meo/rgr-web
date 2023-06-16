@@ -29,13 +29,18 @@
         &:last-child {
             position: relative;
             cursor: pointer;
+
+            button[data-lang] {
+                padding-left: 2.6rem;
+            }
+
             &::before {
                 content: "";
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                left: .7rem;
-                width: 1.4rem;
+                left: .7em;
+                width: 1.4em;
                 aspect-ratio: 1;
                 transition: 200ms;
                 background: url("./../img/lang_icon.svg") no-repeat center / contain;
@@ -48,33 +53,18 @@
                 &:last-child::before {
                     filter: invert(1);
                 }
-                .nav__link {
-                    color: black;
-                }
-                select {
+                button[data-lang] {
                     color: black;
                 }
             }
         }
     }
 
-    &__link {
+    &__link, button[data-lang] {
         display: block;
         padding: .7em 1em;
         color: white;
         transition: 200ms;
-    }
-
-    select {
-        appearance: none;
-        padding: .7em 1em .7em 2.6rem;
-        color: white;
         background-color: transparent;
-        transition: 200ms;
-
-        option {
-            color: #000;
-            background-color: #fff;
-        }
     }
 }
