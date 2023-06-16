@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    @include('blocks.head', ['page_title' => 'Главная'])
+    @include('blocks.head', ['page_title' => 'home'])
 </head>
 <body>
     <div class="page-wrapper">
@@ -10,7 +10,7 @@
 
         <section class="section section_home">
             <div class="container">
-                <h1>Продажа музыкальных инструментов</h1>
+                <h1 data-text="music_instruments_sale"></h1>
             </div>
         </section>
 
