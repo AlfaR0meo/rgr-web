@@ -17,4 +17,4 @@ Admin:
     products
     contacts
     pages
-    login
+    login ✅

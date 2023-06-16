@@ -100,16 +100,7 @@ body {
 }
 
 .page-wrapper {
-  padding: 1rem;
   background-color: white;
-  font-size: 4rem;
-}
-
-ul {
-  font-size: 1rem;
-  background-color: dodgerblue;
-  color: #fff;
-  padding: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
