@@ -3,9 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\News;
+use App\Models\SpecialOffer;
 
 class NewsController extends Controller {
     public function get() {
-        return view('news');
+        $news = News::all();
+        $special_offer = SpecialOffer::all();
+
+        return view('news', compact('news', 'special_offer'));
     }
 }

@@ -13,6 +13,7 @@ class Order extends Model {
         public static function getOrders() {
             $result = Order::all();
 
+
             foreach($result as $key => $order) {
                 $order["products"] = [];
                 $product_ids = [];
@@ -30,7 +31,8 @@ class Order extends Model {
                     array_push($products, [
                         'count' => $product_count,
                         'cost' => $product_count * $product["cost"],
-                        'name' => $product["name"]
+                        'name' => $product["name"],
+                        "image_path" => $product["image_path"],
                     ]);
 
                     
@@ -40,7 +42,7 @@ class Order extends Model {
                 $result[$key] = $order;
             }
 
-            return $result;
+            return $result->toArray();
 
         }
 

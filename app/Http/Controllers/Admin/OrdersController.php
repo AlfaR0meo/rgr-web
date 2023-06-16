@@ -10,11 +10,10 @@ use App\Models\Order;
 class OrdersController extends Controller {
     public function get() {
         $orders = Order::getOrders();
-
         return view('admin/orders')->with("orders", $orders);
     }
 
     public function testOrders() {
-        return json_encode(Order::getOrders()->toArray());
+        return json_encode(Order::getOrders());
     }
 }
