@@ -39,6 +39,7 @@
 
 .page-wrapper {
     background-color: white;
+    padding-top: 200px;
 }
 
 body {
@@ -51,16 +52,10 @@ h1 {
     font-size: var(--fz-900);
     font-weight: 700;
     color: black;
-    background-color: hsla(0, 0%, 0%, 0.1);
-}
-
-.page-wrapper {
-    padding-top: calc(144px + 2rem);
-    height: 200vh;
+    background-color: hsl(0 0% 0% / .1);
 }
 
 
-//!------ nav ------
 .nav {
     z-index: 100;
     width: 100%;
