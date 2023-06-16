@@ -8,7 +8,17 @@
         
         @include("blocks.nav")
 
-        <h1 data-text="news"></h1>
+        <section class="section news">
+            <div class="container">
+                <h1 data-text="news"></h1>
+                <div class="news__row">
+                    <div class="news__item">1</div>
+                    <div class="news__item">2</div>
+                    <div class="news__item">3</div>
+                    <div class="news__item">4</div>
+                </div>
+            </div>
+        </section>
 
 
         

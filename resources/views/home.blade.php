@@ -8,7 +8,7 @@
         
         @include("blocks.nav")
 
-        <section class="section section_home">
+        <section class="section home">
             <div class="container">
                 <h1 class="no-p" data-text="music_instruments_sale"></h1>
             </div>

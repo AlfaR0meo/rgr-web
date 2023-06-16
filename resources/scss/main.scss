@@ -34,27 +34,52 @@
     --spacer: 2rem;
 }
 
+.page-wrapper {
+    padding-top: 144px;
+}
+
 h1 {
-    padding-top: 300px;
+    margin-bottom: 3rem;
     font-size: 4rem;
     font-weight: 700;
     text-align: center;
     color: #333;
+
     &.no-p {
         padding: 0;
     }
 }
 
 .section {
-    padding-block: 4rem;
+    padding-block: 3rem;
 
-    &_home {
+    &.home {
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
 
         background: url("./../img/home/111.jpg") center / cover;
+    }
+
+}
+
+.news {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+        gap: 2rem;
+    }
+    &__item {
+        background-color: silver;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2rem;
+        font-weight: 700;
     }
 }
 
