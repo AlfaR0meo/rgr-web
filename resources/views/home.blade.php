@@ -10,7 +10,7 @@
 
         <section class="section section_home">
             <div class="container">
-                <h1 data-text="music_instruments_sale"></h1>
+                <h1 class="no-p" data-text="music_instruments_sale"></h1>
             </div>
         </section>
 

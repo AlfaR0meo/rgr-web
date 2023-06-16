@@ -15,9 +15,10 @@ body {
 .page-wrapper {
     min-height: 100%;
     overflow: clip;
+    background-color: white;
 }
 [class$="container"] {
-    max-width: $maxWidthContainer + px;
+    max-width: 1056px;
     padding: 0 1rem;
     margin: 0 auto;
 }

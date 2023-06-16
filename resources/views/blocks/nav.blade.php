@@ -12,28 +12,28 @@
                     <a class="nav__link" href="{{ url('/products') }}" data-text="products"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="contacts"></a>
+                    <a class="nav__link" href="{{ url('/contacts') }}" data-text="contacts"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="cart"></a>
+                    <a class="nav__link" href="{{ url('/cart') }}" data-text="cart"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="instruments"></a>
+                    <a class="nav__link" href="{{ url('/instruments') }}" data-text="instruments"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="accessories"></a>
+                    <a class="nav__link" href="{{ url('/accessories') }}" data-text="accessories"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="feedback"></a>
+                    <a class="nav__link" href="{{ url('/feedback') }}" data-text="feedback"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="support"></a>
+                    <a class="nav__link" href="{{ url('/support') }}" data-text="support"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="location"></a>
+                    <a class="nav__link" href="{{ url('/location') }}" data-text="location"></a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#" data-text="site_map"></a>
+                    <a class="nav__link" href="{{ url('/map') }}" data-text="site_map"></a>
                 </li>
                 <li class="nav__item">
                     <button data-lang="ru" data-text="lang" type="button"></button>
