@@ -18,8 +18,11 @@
 <body>
     @include("blocks.nav")
     <div class="page-wrapper">
+        
 
-
+        <section>
+            
+        </section>
         <div class="container">
             <h1>Главная</h1>
             <div class="content">

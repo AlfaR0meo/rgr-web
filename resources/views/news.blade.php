@@ -15,8 +15,9 @@
     <script src="./js/script.js" defer></script>
 </head>
 <body>
-    @include("blocks.nav")
     <div class="page-wrapper">
+        
+        @include("blocks.nav")
 
         <div class="container">
             <h1>Новости</h1>
