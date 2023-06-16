@@ -36,7 +36,7 @@
                     <a class="nav__link" href="#">Карта сайта</a>
                 </li>
                 <li class="nav__item">
-                    <button data-lang="ru" type="button">ru</button>
+                    <button data-lang="ru" data-text="lang" type="button">ru</button>
                 </li>
             </ul>
         </div>

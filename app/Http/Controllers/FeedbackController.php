@@ -8,4 +8,12 @@ class FeedbackController extends Controller {
     public function get() {
         return view('feedback');
     }
+
+    public function post() {
+
+
+
+
+        return view('feedback');
+    }
 }
