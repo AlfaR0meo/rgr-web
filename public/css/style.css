@@ -104,7 +104,8 @@ body {
   gap: 1em;
 }
 .nav__item {
-  border: 1px solid white;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.5);
+  border-radius: 1em;
   transition: 200ms;
 }
 .nav__item:first-child {
@@ -112,6 +113,7 @@ body {
 }
 .nav__item:last-child {
   position: relative;
+  border: none;
   cursor: pointer;
 }
 .nav__item:last-child button[data-lang] {
