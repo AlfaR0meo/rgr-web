@@ -1,2 +1,12 @@
-Я изменил файл
-ЛЯЛЯЛЯЛЯ
+User:
+    home
+    news
+    products
+    contacts
+    cart
+    instruments 
+    accessories
+    feedback
+    support
+    location 
+    map
