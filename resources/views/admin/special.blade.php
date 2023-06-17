@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    @include('blocks.head', ['page_title' => 'accessories'])
+    @include('blocks.head', ['page_title' => 'special_offers'])
     <script src="https://cdn.tiny.cloud/1/99vzagw34guk5b2v26t6eyqlbkoqeztrz6zavydzprtsb8oi/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>

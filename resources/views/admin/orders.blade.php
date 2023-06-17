@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    @include('blocks.head', ['page_title' => 'accessories'])
+    @include('blocks.head', ['page_title' => 'orders'])
 </head>
 <body>
     <div class="page-wrapper">
         
         @include("blocks.admin-nav")
 
-        <h1>Заказы админа</h1>
+        <h1 data-text="orders"></h1>
 
 
         

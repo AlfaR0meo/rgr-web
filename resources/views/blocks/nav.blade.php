@@ -3,7 +3,7 @@
         <div class="container">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__link" href="{{ url('/admin__login') }}">К админу</a>
+                    <a class="nav__link" href="{{ url('/admin__login') }}" data-text="to_admin"></a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="{{ url('/home') }}" data-text="home"></a>
