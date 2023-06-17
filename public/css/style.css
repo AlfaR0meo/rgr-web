@@ -110,12 +110,7 @@ body {
   transition: 200ms;
 }
 .nav__item:first-child {
-  border-radius: 0;
-  color: #000;
-  background-color: tan;
-}
-.nav__item:first-child .nav__link {
-  color: #000;
+  background-color: rebeccapurple;
 }
 .nav__item:last-child {
   position: relative;
@@ -142,10 +137,10 @@ body {
     background-color: white;
   }
   .nav__item:hover:first-child {
-    background-color: tan;
+    background-color: rebeccapurple;
   }
   .nav__item:hover:first-child .nav__link {
-    color: #000;
+    color: white;
   }
   .nav__item:hover:last-child::before {
     filter: invert(1);

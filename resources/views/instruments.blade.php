@@ -8,7 +8,11 @@
         
         @include("blocks.nav")
 
-        <h1 data-text="instruments"></h1>
+        <section class="section instruments">
+            <div class="container">
+                <h1 data-text="instruments"></h1>
+            </div>
+        </section>
 
 
         

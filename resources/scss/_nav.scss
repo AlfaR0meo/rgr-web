@@ -25,12 +25,7 @@
         transition: 200ms;
 
         &:first-child {
-            border-radius: 0;
-            color: #000;
-            background-color: tan;
-            .nav__link {
-                color: #000;
-            }
+            background-color: rebeccapurple;
         }
 
         &:last-child {
@@ -60,9 +55,9 @@
             &:hover {
                 background-color: white;
                 &:first-child {
-                    background-color: tan;
+                    background-color: rebeccapurple;
                     .nav__link {
-                        color: #000;
+                        color: white;
                     }
                 }
                 &:last-child::before {
