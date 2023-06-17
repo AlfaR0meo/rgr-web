@@ -12,12 +12,14 @@
             <div class="container">
                 <h1 data-text="news"></h1>
                 <div class="news__row">
+
                     <div class="news__item">
                         <img src="./img/home/111.jpg" alt="">
                         <h2>New новость</h2>
                         <p>Текст новой новости!</p>
                         <div class="date">23.03.2023</div>
                     </div>
+                    
                     <div class="news__item">2</div>
                     <div class="news__item">3</div>
                     <div class="news__item">4</div>

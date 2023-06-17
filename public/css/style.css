@@ -218,11 +218,11 @@ h1.no-p {
   gap: 2rem;
 }
 .news__item {
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
   background-color: hsl(0deg, 0%, 85%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .content {
