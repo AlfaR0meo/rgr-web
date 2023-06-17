@@ -7,8 +7,33 @@ function changeLanguage(language) {
         } catch (error) {
             element.textContent = "Перевод отсутствует";
         }
+    }
+
+    let translatable_validation_messages = document.querySelectorAll("[data-validity_text]");
+    for (let element of translatable_validation_messages) {
+
+        function createValidityMessage(event) {
+            event.target.setCustomValidity("");
+
+            if (!event.target.validity.valid) {
+                try {
+                    event.target.setCustomValidity(strings[element.dataset.validity_text][language]);
+                } catch (error) {
+                    event.target.setCustomValidity("Перевод отсутствует");
+                }
+            }
+        }
+
+        function removeValidityMessage(event) {
+            event.target.setCustomValidity("");
+        }
+
+
+        element.addEventListener("invalid", createValidityMessage);
+        element.addEventListener("input", removeValidityMessage);
         
-    }   
+        
+    }
 }
 
 function switchLanguage() {
@@ -177,6 +202,10 @@ let strings = {
     "format_violated_cost": {
         "ru": "Неверный формат цены",
         "en": "Wrong format for cost field"
-    }
+    },
+    "special_offers": {
+        "ru": "Акции",
+        "en": "Special offers"
+    },
     
 };

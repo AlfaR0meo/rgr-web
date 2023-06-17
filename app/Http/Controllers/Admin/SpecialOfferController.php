@@ -9,9 +9,9 @@ use App\Models\SpecialOffer;
 use App\Http\Requests\SpecialOfferFormRequest;
 class SpecialOfferController extends Controller {
     public function get() {
-        $special_offer = SpecialOffer::all();
+        $special_offers = SpecialOffer::all();
 
-        return view('admin/special', compact("special_offer"));
+        return view('admin/special', compact("special_offers"));
     }
 
     public function post(SpecialOfferFormRequest $request) {
@@ -31,7 +31,7 @@ class SpecialOfferController extends Controller {
             $special_offer->save();
         }
 
-        $special_offer = SpecialOffer::all();
-        return view('admin/special', compact('special_offer'));
+        $special_offers = SpecialOffer::all();
+        return view('admin/special', compact('special_offers'));
     }
 }

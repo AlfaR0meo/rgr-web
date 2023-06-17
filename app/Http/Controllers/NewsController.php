@@ -9,8 +9,8 @@ use App\Models\SpecialOffer;
 class NewsController extends Controller {
     public function get() {
         $news = News::all();
-        $special_offer = SpecialOffer::all();
+        $special_offers = SpecialOffer::all();
 
-        return view('news', compact('news', 'special_offer'));
+        return view('news', compact('news', 'special_offers'));
     }
 }
