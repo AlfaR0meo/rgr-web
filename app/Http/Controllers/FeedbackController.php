@@ -18,6 +18,7 @@ class FeedbackController extends Controller {
         $feedback->email = $request->input("email");
         $feedback->message = $request->input("message");
         $feedback->save();
+        dd($feedback);
 
         return view('feedback');
     }

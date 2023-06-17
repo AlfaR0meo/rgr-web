@@ -31,8 +31,12 @@ function changeLanguage(language) {
 
         element.addEventListener("invalid", createValidityMessage);
         element.addEventListener("input", removeValidityMessage);
-        
-        
+    }
+
+    let translatable_placeholders = document.querySelectorAll("[data-placeholder_text]");
+
+    for (let element of translatable_placeholders) {
+        element.placeholder = strings[element.dataset.placeholder_text][language];
     }
 }
 
@@ -222,6 +226,26 @@ let strings = {
     "history_classification": {
         "ru": "В истории было предпринято множество попыток классифицировать музыкальные инструменты. В академической сфере распространено деление инструментов на струнные, духовые, ударные, народные, клавишные и др. Данная классификация имеет много недостатков, в первую очередь непонятен её критерий: струнные и духовые инструменты обособлены на основе источника звука, ударные — на основе типа звукоизвлечения, народные — на основе сферы бытования, клавишные — на основе звукорегулятора. Более того, к народным относят инструменты, не имевшие распространения в народе (клавишные гусли, баян); к клавишным причисляют фортепиано, являющееся к тому же струнным и ударным инструментом.",
         "en": "There have been many attempts in history to classify musical instruments. In the academic sphere, the division of instruments into strings, wind instruments, percussion instruments, folk instruments, keyboards, etc. is widespread. This classification has many disadvantages, first of all, its criterion is unclear: stringed and wind instruments are separated based on the sound source, percussion — based on the type of sound extraction, folk — based on the sphere of existence, keyboards — based on the sound regulator. Moreover, folk instruments include instruments that were not widespread among the people (keyboard psaltery, accordion); keyboards include the piano, which is also a stringed and percussion instrument."
+    },
+    "placeholder_title": {
+        "ru": "Введите название новости",
+        "en": "Print news title"
+    },
+    "print_fullname": {
+        "ru": "Введите ФИО",
+        "en": "Print fullname"
+    },
+    "print_phone": {
+        "ru": "Введите телефон",
+        "en": "Print phone"
+    },
+    "print_email": {
+        "ru": "Введите адрес почты",
+        "en": "Print email"
+    },
+    "print_text": {
+        "ru": "Введите текст",
+        "en": "Print text"
     }
     
 };

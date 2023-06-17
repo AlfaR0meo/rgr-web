@@ -92,21 +92,22 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 200;
   width: 100%;
   padding-block: 1.5em;
   font-size: var(--fz-400);
-  background-color: hsla(0deg, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 .nav__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
 }
 .nav__item {
-  border: 2px solid hsla(0deg, 0%, 100%, 0.5);
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
   border-radius: 1em;
   transition: 200ms;
 }
@@ -169,6 +170,8 @@ body {
   --clr-gold-400: 47 84% 56%;
   --clr-gold-700: 45 69% 42%;
   --clr-gold-900: 40 78% 28%;
+  --nav-height-2rows: 144px;
+  --nav-height-1row: 89px;
   --fz-300: 0.75rem;
   --fz-400: 1rem;
   --fz-500: 1.25rem;
@@ -180,10 +183,13 @@ body {
 }
 
 .page-wrapper {
-  padding-top: 144px;
+  padding-top: var(--nav-height-2rows);
 }
 .page-wrapper.s-p {
-  padding-top: 89px;
+  padding-top: var(--nav-height-1row);
+}
+.page-wrapper.no-p {
+  padding: 0;
 }
 
 h1 {
@@ -211,24 +217,30 @@ h1.no-p {
 .section.location iframe {
   width: 100%;
 }
+.section.feedback {
+  padding-top: calc(3rem + var(--nav-height-2rows));
+  min-height: 100vh;
+  background: url("./../img/home/111.jpg") center/cover;
+}
 
-.news__row {
+.card-row {
   display: grid;
   align-items: start;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-.news__item {
+
+.card-item {
   display: grid;
   gap: 1.5rem;
   padding: 2rem;
   border: 2px solid rebeccapurple;
 }
-.news__item > h2 {
+.card-item > h2 {
   font-size: var(--fz-600);
   font-weight: 700;
 }
-.news__item > p {
+.card-item > p {
   line-height: 1.6;
   text-align: justify;
   display: -webkit-box;
@@ -236,7 +248,7 @@ h1.no-p {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.news__item > .date {
+.card-item > .date {
   text-align: right;
   font-style: italic;
 }
@@ -248,4 +260,59 @@ h1.no-p {
   margin-bottom: 2em;
 }
 
-/*# sourceMappingURL=style.css.map */
+.admin-form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  outline: 2px solid rebeccapurple;
+}
+.admin-form > *:not(input[type=submit], input[type=file]) {
+  outline: 2px solid rebeccapurple;
+}
+.admin-form input[type=file]::-webkit-file-upload-button {
+  padding: 1rem;
+  color: white;
+  background-color: rebeccapurple;
+  cursor: pointer;
+}
+.admin-form input[type=text] {
+  padding: 1em;
+}
+.admin-form input[type=submit] {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  background-color: rebeccapurple;
+  color: white;
+  cursor: pointer;
+}
+
+.feedback-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+.feedback-form > *:not(input[type=submit], input[type=file]) {
+  outline: 2px solid rebeccapurple;
+}
+.feedback-form input, .feedback-form textarea {
+  background-color: hsla(0, 0%, 100%, 0.5);
+  backdrop-filter: blur(10px);
+}
+.feedback-form > * {
+  padding: 0.75em;
+  border-radius: 1em;
+}
+.feedback-form textarea {
+  min-height: 160px;
+  max-height: 400px;
+}
+.feedback-form input[type=submit] {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: rebeccapurple;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
