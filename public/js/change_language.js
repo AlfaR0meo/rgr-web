@@ -155,7 +155,7 @@ let strings = {
         "en": "Password field is required"
     },
     "skipped_title": {
-        "ru": "Название новости обязательно",
+        "ru": "Вы пропустили поле название",
         "en": "Title field is required"
     },
     "skipped_text": {
@@ -163,8 +163,20 @@ let strings = {
         "en": "Text field is required"
     },
     "skipped_image": {
-        "ru": "Нужно прикрепить изображения",
+        "ru": "Нужно прикрепить изображение",
         "en": "Image field is required"
     },
+    "skipped_name": {
+        "ru": "Вы пропустили поле наименование",
+        "en": "Name field is required"
+    },
+    "skipped_cost": {
+        "ru": "Нужно указать цену",
+        "en": "Cost field is required"
+    },
+    "format_violated_cost": {
+        "ru": "Неверный формат цены",
+        "en": "Wrong format for cost field"
+    }
     
 };
