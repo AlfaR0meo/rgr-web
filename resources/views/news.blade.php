@@ -12,22 +12,24 @@
             <div class="container">
                 <h1 data-text="news"></h1>
                 <div class="news__row">
-
                     <div class="news__item">
-                        <img src="./img/home/111.jpg" alt="">
                         <h2>New новость</h2>
-                        <p>Текст новой новости!</p>
-                        <div class="date">23.03.2023</div>
+                        <img src="./img/home/333.jpg" alt="">
+                        <p>Текст новой новости! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, reprehenderit? Minima totam veritatis provident. Quo blanditiis repudiandae dolorum molestias ullam.</p>
+                        <div class="date">23/03/2023</div>
                     </div>
-                    
-                    <div class="news__item">2</div>
-                    <div class="news__item">3</div>
-                    <div class="news__item">4</div>
-                    <div class="news__item">5</div>
-                    <div class="news__item">6</div>
-                    <div class="news__item">7</div>
-                    <div class="news__item">8</div>
-                    <div class="news__item">9</div>
+                    <div class="news__item">
+                        <h2>Супер новость 2</h2>
+                        <img src="./img/home/666.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ullam commodi aliquid dicta libero consequuntur eligendi provident eaque optio rem, minima nulla voluptatum amet dolores voluptas itaque exercitationem sapiente recusandae veritatis nemo vel, ipsam debitis! Eius libero minima quasi omnis accusantium explicabo magnam perspiciatis saepe.</p>
+                        <div class="date">13/12/2002</div>
+                    </div>
+                    <div class="news__item">
+                        <h2>Ошалеть, новость 3</h2>
+                        <img src="./img/home/888.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui est vitae, iste ea beatae obcaecati nesciunt alias incidunt fugiat cumque et ipsa? Quidem suscipit eaque, neque provident optio iure tempora magni? Exercitationem laudantium repudiandae fuga molestias explicabo unde eum placeat.</p>
+                        <div class="date">09/05/2022</div>
+                    </div>
                 </div>
             </div>
         </section>
