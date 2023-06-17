@@ -10,7 +10,7 @@ return new class extends Migration {
             $table->id();
             $table->string("title");
             $table->longText("text");
-            $table->string("image_path");
+            $table->string("image_path")->nullable();
             $table->timestamps();
         });
     }

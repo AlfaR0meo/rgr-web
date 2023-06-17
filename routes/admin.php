@@ -9,7 +9,7 @@ Route::get('/admin__login', 'LoginController@get');
 Route::get('/admin__orders', 'OrdersController@get');
 
 Route::post('/admin__login', "LoginController@post");
-Route::post('/admin__news', "NewsController@post");
+Route::post('/admin__news', "NewsController@post")->name("news.send");
 
 
 

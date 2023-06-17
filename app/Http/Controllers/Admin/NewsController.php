@@ -25,10 +25,10 @@ class NewsController extends Controller {
         $news->save();
         
         $file = $request->file('image');
-
         if ($file != null) {
-            $news->image_path = "./news/" . $news->id . "." . $request->file('image')->extension();
-            Storage::disk('local')->put($news->image_path, $file);
+            $filename = $news->id . "." . $request->file('image')->extension();
+            $news->image_path = "/img/news/" . $filename;
+            $file->storeAs("img/news", $filename);
 
             $news->save();
         }

@@ -10,7 +10,7 @@ return new class extends Migration {
             $table->id();
             $table->string("name");
             $table->longText("text");
-            $table->string("image_path");
+            $table->string("image_path")->nullable();
             $table->decimal("cost");
             $table->timestamps();
         });
