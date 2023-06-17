@@ -66,6 +66,12 @@ h1 {
 
         background: url("./../img/home/111.jpg") center / cover;
     }
+
+    &.location {
+        iframe {
+            width: 100%;
+        }
+    }
 }
 
 .news {

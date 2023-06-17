@@ -207,6 +207,9 @@ h1.no-p {
   min-height: 100vh;
   background: url("./../img/home/111.jpg") center/cover;
 }
+.section.location iframe {
+  width: 100%;
+}
 
 .news__row {
   display: grid;
