@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* ■■■■■ ШРИФТЫ ■■■■■■■■■■■■■■■■■■■■■■ */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ■■■■■ ОБНУЛЯЮЩИЕ СТИЛИ ■■■■■■■■■■■■ */
+body {
+  margin: 0;
+}
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+body *::before, body *::after {
+  box-sizing: border-box;
+}
+
+header, nav, main, footer, section, aside,
+img, picture, video, canvas, svg,
+label, summary, source, iframe {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input, button, textarea, select {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+/* ■■■■■ БАЗОВЫЕ СТИЛИ ■■■■■■■■■■■■■■■ */
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--ff-body, serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+}
+@supports (-webkit-tap-highlight-color: transparent) {
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.page-wrapper {
+  min-height: 100%;
+  overflow: clip;
+  background-color: white;
+}
+
+[class$=container] {
+  max-width: 1056px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.none, [none] {
+  display: none !important;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100%;
+  padding-block: 1.5em;
+  font-size: var(--fz-400);
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.nav__item {
+  border: 2px solid hsla(0deg, 0%, 100%, 0.5);
+  border-radius: 1em;
+  transition: 200ms;
+}
+.nav__item:first-child {
+  background-color: rebeccapurple;
+}
+.nav__item:last-child {
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.nav__item:last-child button[data-lang] {
+  padding-left: 2.6rem;
+}
+.nav__item:last-child::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.7em;
+  width: 1.4em;
+  aspect-ratio: 1;
+  transition: 200ms;
+  pointer-events: none;
+  background: url("./../img/lang_icon.svg") no-repeat center/contain;
+}
+@media (any-hover: hover) {
+  .nav__item:hover {
+    background-color: white;
+  }
+  .nav__item:hover:first-child {
+    background-color: rebeccapurple;
+  }
+  .nav__item:hover:first-child .nav__link {
+    color: white;
+  }
+  .nav__item:hover:last-child::before {
+    filter: invert(1);
+  }
+  .nav__item:hover button[data-lang], .nav__item:hover .nav__link {
+    color: black;
+  }
+}
+.nav__link, .nav button[data-lang] {
+  display: block;
+  padding: 0.7em 1em;
+  color: white;
+  background-color: transparent;
+  transition: 200ms;
+}
+
+/* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
+:root {
+  --ff-body: "Roboto Serif", serif;
+  --ff-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --clr-primary: black;
+  --clr-bg: white;
+  --clr-accent: dodgerblue;
+  --clr-gold-300: 48 100% 71%;
+  --clr-gold-400: 47 84% 56%;
+  --clr-gold-700: 45 69% 42%;
+  --clr-gold-900: 40 78% 28%;
+  --nav-height-2rows: 144px;
+  --nav-height-1row: 89px;
+  --fz-300: 0.75rem;
+  --fz-400: 1rem;
+  --fz-500: 1.25rem;
+  --fz-600: 1.5rem;
+  --fz-700: 2rem;
+  --fz-800: 2rem;
+  --fz-900: 3rem;
+  --spacer: 2rem;
+}
+
+.page-wrapper {
+  padding-top: var(--nav-height-2rows);
+}
+.page-wrapper.s-p {
+  padding-top: var(--nav-height-1row);
+}
+.page-wrapper.no-p {
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+h1.no-p {
+  padding: 0;
+}
+
+.section {
+  padding-block: 3rem;
+}
+.section.home {
+  margin-top: -144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./../img/home/111.jpg") center/cover;
+}
+.section.location iframe {
+  width: 100%;
+}
+.section.feedback {
+  padding-top: calc(3rem + var(--nav-height-2rows));
+  min-height: 100vh;
+  background: url("./../img/home/111.jpg") center/cover;
+}
+
+.card-row {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card-item {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 2px solid rebeccapurple;
+}
+.card-item > h2 {
+  font-size: var(--fz-600);
+  font-weight: 700;
+}
+.card-item > p {
+  line-height: 1.6;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-item > .date {
+  text-align: right;
+  font-style: italic;
+}
+
+.content {
+  line-height: 1.8;
+}
+.content p:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.admin-form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  outline: 2px solid rebeccapurple;
+}
+.admin-form > *:not(input[type=submit], input[type=file]) {
+  outline: 2px solid rebeccapurple;
+}
+.admin-form input[type=file]::-webkit-file-upload-button {
+  padding: 1rem;
+  color: white;
+  background-color: rebeccapurple;
+  cursor: pointer;
+}
+.admin-form input[type=text] {
+  padding: 1em;
+}
+.admin-form input[type=submit] {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  background-color: rebeccapurple;
+  color: white;
+  cursor: pointer;
+}
+
+.feedback-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+.feedback-form > *:not(input[type=submit], input[type=file]) {
+  outline: 2px solid rebeccapurple;
+}
+.feedback-form input, .feedback-form textarea {
+  background-color: hsla(0deg, 0%, 100%, 0.5);
+  backdrop-filter: blur(10px);
+}
+.feedback-form > * {
+  padding: 0.75em;
+  border-radius: 1em;
+}
+.feedback-form textarea {
+  min-height: 160px;
+  max-height: 400px;
+}
+.feedback-form input[type=submit] {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: rebeccapurple;
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -20,24 +20,12 @@
                 <li class="nav__item">
                     <a class="nav__link" href="{{ url('/cart') }}" data-text="cart"></a>
                 </li>
-                <!-- <li class="nav__item">
-                    <a class="nav__link" href="{{ url('/instruments') }}" data-text="instruments"></a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="{{ url('/accessories') }}" data-text="accessories"></a>
-                </li> -->
                 <li class="nav__item">
                     <a class="nav__link" href="{{ url('/feedback') }}" data-text="feedback"></a>
                 </li>
-                <!-- <li class="nav__item">
-                    <a class="nav__link" href="{{ url('/support') }}" data-text="support"></a>
-                </li> -->
                 <li class="nav__item">
                     <a class="nav__link" href="{{ url('/location') }}" data-text="location"></a>
                 </li>
-                <!-- <li class="nav__item">
-                    <a class="nav__link" href="{{ url('/map') }}" data-text="site_map"></a>
-                </li> -->
                 <li class="nav__item">
                     <button data-lang="ru" data-text="lang" type="button"></button>
                 </li>
