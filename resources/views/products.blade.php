@@ -20,6 +20,7 @@
                             <p class="item-products__text">{{$product->text}}</p>
                             <img class="item-products__image" src="{{$product->image_path}}" alt="">
                             <div class="item-products__price">{{$product->cost}}</div>
+                            <button class="item-products__add-to-cart-btn" type="button">В корзину</button>
                         </div>
                     @endforeach
                     <div class="products__item item-products">
@@ -27,6 +28,7 @@
                         <p class="item-products__text">Описание товара Описание товара Описание товара Описание товара</p>
                         <img class="item-products__image" src="./img/home/555.jpg" alt="">
                         <div class="item-products__price">1000₽</div>
+                        <button class="item-products__add-to-cart-btn" type="button">В корзину</button>
                     </div>
                 </div>
             </div>
