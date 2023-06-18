@@ -123,7 +123,7 @@ h1 {
 }
 
 .content {
-    line-height: 1.8;
+    line-height: 1.75;
 
     p:not(:last-child) {
         margin-bottom: 2em;
@@ -198,32 +198,55 @@ h1 {
 
 
 
+
+
+
+
 .products {
     // .products__row
     &__row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        background-color: red;
+        gap: 2rem;
     }
     // .products__item
     &__item {
+        padding: 2rem;
+        border: 2px solid hsl(0 0% 0% / .5);
+        border-radius: 2rem;
     }
 }
 .item-products {
+    display: grid;
+    gap: 1rem;
     // .item-products__name
     &__name {
+        font-weight: 700;
+        font-size: var(--fz-700);
     }
     // .item-products__text
     &__text {
+        line-height: 1.5;
     }
     // .item-products__image
     &__image {
+        max-height: 200px;
     }
     // .item-products__price
     &__price {
+        font-size: var(--fz-600);
+    }
+    // .item-products__add-to-cart-btn
+    &__add-to-cart-btn {
+        width: fit-content;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+        background-color: hotpink;
+        color: #fff;
     }
 }
+
+//<button class="item-products__add-to-cart-btn" type="button">В корзину</button>
 
 
 

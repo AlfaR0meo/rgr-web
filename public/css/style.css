@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* ■■■■■ ШРИФТЫ ■■■■■■■■■■■■■■■■■■■■■■ */
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* ■■■■■ ОБНУЛЯЮЩИЕ СТИЛИ ■■■■■■■■■■■■ */
 body {
@@ -254,7 +253,7 @@ h1.no-p {
 }
 
 .content {
-  line-height: 1.8;
+  line-height: 1.75;
 }
 .content p:not(:last-child) {
   margin-bottom: 2em;
@@ -320,8 +319,37 @@ h1.no-p {
 .products__row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.products__item {
+  padding: 2rem;
+  border: 2px solid hsla(0deg, 0%, 0%, 0.5);
+  border-radius: 2rem;
+}
+
+.item-products {
+  display: grid;
   gap: 1rem;
-  background-color: red;
+}
+.item-products__name {
+  font-weight: 700;
+  font-size: var(--fz-700);
+}
+.item-products__text {
+  line-height: 1.5;
+}
+.item-products__image {
+  max-height: 200px;
+}
+.item-products__price {
+  font-size: var(--fz-600);
+}
+.item-products__add-to-cart-btn {
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  background-color: hotpink;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
