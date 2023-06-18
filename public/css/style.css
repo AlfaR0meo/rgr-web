@@ -322,15 +322,13 @@ h1.no-p {
   gap: 2rem;
 }
 .products__item {
+  display: grid;
+  gap: 1rem;
   padding: 2rem;
   border: 2px solid hsla(0deg, 0%, 0%, 0.5);
   border-radius: 2rem;
 }
 
-.item-products {
-  display: grid;
-  gap: 1rem;
-}
 .item-products__name {
   font-weight: 700;
   font-size: var(--fz-700);
