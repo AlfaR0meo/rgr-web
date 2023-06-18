@@ -350,4 +350,48 @@ h1.no-p {
   color: #fff;
 }
 
+.cart__row {
+  display: grid;
+  gap: 2rem;
+}
+.cart__item {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+}
+.cart__name {
+  font-size: 2rem;
+}
+.cart__image {
+  max-height: 100px;
+}
+.cart__price {
+  font-size: 2rem;
+}
+.cart__count {
+  display: flex;
+}
+.cart__count > * {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.cart__btn {
+  padding: 0.4rem;
+  aspect-ratio: 1;
+}
+.cart__count-number {
+  text-align: center;
+}
+.cart__total-price {
+  margin-top: 2rem;
+  width: fit-content;
+  margin-left: auto;
+  font-size: 2rem;
+}
+.cart__total-price span {
+  font-weight: 700;
+  font-style: italic;
+}
+
 /*# sourceMappingURL=style.css.map */
