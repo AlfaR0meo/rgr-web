@@ -4,12 +4,8 @@ User:
     products
     contacts
     cart
-    instruments 
-    accessories
     feedback
-    support
     location 
-    map
 
 Admin:
     news
