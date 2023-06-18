@@ -14,12 +14,14 @@
                 <h1 data-text="products"></h1>
 
                 <div class="products__row">
-                    <div class="products__item item-products">
-                        <h3 class="item-products__name">Название товара</h3>
-                        <p class="item-products__text">Описание товара Описание товара Описание товара Описание товара</p>
-                        <img class="item-products__image" src="./img/home/222.jpg" alt="">
-                        <div class="item-products__price">1000₽</div>
-                    </div>
+                    @foreach ($products as $product)
+                        <div class="products__item item-products">
+                            <h3 class="item-products__name">{{$product->name}}</h3>
+                            <p class="item-products__text">{{$product->text}}</p>
+                            <img class="item-products__image" src="{{$product->image_path}}" alt="">
+                            <div class="item-products__price">{{$product->cost}}</div>
+                        </div>
+                    @endforeach
                     <div class="products__item item-products">
                         <h3 class="item-products__name">Название товара</h3>
                         <p class="item-products__text">Описание товара Описание товара Описание товара Описание товара</p>
