@@ -317,4 +317,11 @@ h1.no-p {
   cursor: pointer;
 }
 
+.products__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background-color: red;
+}
+
 /*# sourceMappingURL=style.css.map */

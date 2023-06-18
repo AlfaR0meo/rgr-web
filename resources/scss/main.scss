@@ -198,6 +198,37 @@ h1 {
 
 
 
+.products {
+    // .products__row
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        background-color: red;
+    }
+    // .products__item
+    &__item {
+    }
+}
+.item-products {
+    // .item-products__name
+    &__name {
+    }
+    // .item-products__text
+    &__text {
+    }
+    // .item-products__image
+    &__image {
+    }
+    // .item-products__price
+    &__price {
+    }
+}
+
+
+
+
+
 
 
 
