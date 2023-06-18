@@ -246,6 +246,9 @@ let strings = {
     "print_text": {
         "ru": "Введите текст",
         "en": "Print text"
+    },
+    "add_to_cart": {
+        "ru": "В корзину",
+        "en": "Add to cart"
     }
-    
 };

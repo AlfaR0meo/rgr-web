@@ -9,7 +9,8 @@ use App\Http\Requests\OrderFormRequest;
 
 class CartController extends Controller {
     public function get() {
-        return view('cart');
+        $products = Product::all();
+        return view('cart',  compact('products'));
     }
 
     public function getProducts() {
@@ -25,6 +26,7 @@ class CartController extends Controller {
         $order->payment_method = $request->input("payment_method");
         $order->save();
 
-        return view('cart');
+        $products = Product::all();
+        return view('cart',  compact('products'));
     }
 }
