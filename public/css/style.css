@@ -214,9 +214,6 @@ body {
 .cart__form-group {
   display: grid;
 }
-.cart * {
-  outline: 1px solid limegreen;
-}
 
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
 :root {

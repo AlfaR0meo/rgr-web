@@ -60,8 +60,8 @@
                     <div class="cart__form-group">
                         <label for="payment_method" data-text="payment_method"></label>
                         <select name="payment_method" id="payment_method">
-                            <option value="cash" data-text="">Нал</option>
-                            <option value="cashless" data-text="">Безнал</option>
+                            <option value="cash" data-text="cash">Нал</option>
+                            <option value="cashless" data-text="cashless">Безнал</option>
                         </select>
                     </div>
 
