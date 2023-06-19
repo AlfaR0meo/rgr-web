@@ -40,7 +40,7 @@
                     @endforeach
                 </div>
 
-                <div class="cart__total-price" data-text="total"><span id="total-price"></span> ₽</div>
+                <div class="cart__total-price"><span data-text="total">Итого: </span><span id="total-price"></span> ₽</div>
             
                 <form action="" class="cart__form">
                     <input type="hidden" name="product_ids">

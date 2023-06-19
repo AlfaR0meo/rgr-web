@@ -197,12 +197,13 @@ body {
   border: 1px solid black;
 }
 .cart__total-price {
+  padding: 1em;
   margin-top: 2rem;
-  width: fit-content;
-  margin-left: auto;
+  text-align: right;
   font-size: 2rem;
+  border: 2px solid forestgreen;
 }
-.cart__total-price span {
+.cart__total-price span:last-child {
   font-weight: 700;
   font-style: italic;
 }
