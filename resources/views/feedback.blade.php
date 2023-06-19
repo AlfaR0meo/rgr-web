@@ -17,7 +17,7 @@
                     <input name="phone" type="phone" data-placeholder_text="print_phone">
                     <input name="email" type="email" data-placeholder_text="print_email">
                     <textarea name="message" data-placeholder_text="print_text"></textarea>
-                    <input type="submit" value="Отправить">
+                    <input type="submit" data-value_text="send">
                 </form>
             </div>
         </section>
