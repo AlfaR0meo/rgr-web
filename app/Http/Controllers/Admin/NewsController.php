@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Storage;
 class NewsController extends Controller {
     public function get() {
         $news = News::all();
-
-        return view('admin/news', compact('news'));
+        $isAdmin = session("isAdmin");
+        $login = session("login");
+        return view('admin/news', compact('news', 'isAdmin', 'login'));
     }
 
     public function post(NewsFormRequest $request) {
@@ -33,8 +34,11 @@ class NewsController extends Controller {
             $news->save();
         }
 
+        
         $news = News::all();
-        return view('admin/news', compact('news'));
+        $isAdmin = session("isAdmin");
+        $login = session("login");
+        return view('admin/news', compact('news', 'isAdmin', 'login'));
     }
 
 }

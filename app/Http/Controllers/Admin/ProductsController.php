@@ -11,8 +11,9 @@ use App\Http\Requests\ProductFormRequest;
 class ProductsController extends Controller {
     public function get() {
         $products = Product::all();
-
-        return view('admin/products', compact("products"));
+        $isAdmin = session("isAdmin");
+        $login = session("login");
+        return view('admin/products', compact('products', 'isAdmin', 'login'));
     }
 
     public function post(ProductFormRequest $request) {
@@ -34,8 +35,10 @@ class ProductsController extends Controller {
             $product->save();
         }
 
-        $product = Product::all();
-        return view('admin/news', compact('news'));
+        $products = Product::all();
+        $isAdmin = session("isAdmin");
+        $login = session("login");
+        return view('admin/products', compact('products', 'isAdmin', 'login'));
     }
     
 }

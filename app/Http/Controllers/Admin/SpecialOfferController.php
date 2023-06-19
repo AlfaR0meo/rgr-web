@@ -10,8 +10,9 @@ use App\Http\Requests\SpecialOfferFormRequest;
 class SpecialOfferController extends Controller {
     public function get() {
         $special_offers = SpecialOffer::all();
-
-        return view('admin/special', compact("special_offers"));
+        $isAdmin = session("isAdmin");
+        $login = session("login");
+        return view('admin/special', compact('special_offers', 'isAdmin', 'login'));
     }
 
     public function post(SpecialOfferFormRequest $request) {
@@ -32,6 +33,8 @@ class SpecialOfferController extends Controller {
         }
 
         $special_offers = SpecialOffer::all();
-        return view('admin/special', compact('special_offers'));
+        $isAdmin = session("isAdmin");
+        $login = session("login");
+        return view('admin/special', compact('special_offers', 'isAdmin', 'login'));
     }
 }

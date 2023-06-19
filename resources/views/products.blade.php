@@ -18,7 +18,7 @@
                     @foreach ($products as $product)
                         <div class="products__item item-products">
                             <h3 class="item-products__name">{{$product->name}}</h3>
-                            <p class="item-products__text">{{$product->text}}</p>
+                            <p class="item-products__text">{!!$product->text!!}</p>
                             <img class="item-products__image" src="{{$product->image_path}}" alt="">
                             <div class="item-products__price">{{$product->cost}} ₽</div>
                             <button class="item-products__add-to-cart-btn" type="button"  data-product_id="{{$product->id}}" data-text="add_to_cart" onclick="addToCart(this.dataset.product_id)"></button>

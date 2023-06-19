@@ -29,7 +29,7 @@
             background-color: rebeccapurple;
         }
 
-        &:last-child {
+        &:has([data-lang]) {
             position: relative;
             border: none;
             cursor: pointer;
@@ -52,6 +52,13 @@
             }
         }
 
+        &:has(#exit-button) {
+            background-color: hsl(0, 60%, 40%);
+            button[type=button] {
+                background-color: transparent;
+            }
+        }
+
         @media (any-hover: hover) {
             &:hover {
                 background-color: white;
@@ -61,17 +68,23 @@
                         color: white;
                     }
                 }
-                &:last-child::before {
+                &:has([data-lang])::before {
                     filter: invert(1);
                 }
-                button[data-lang], .nav__link {
+                button, .nav__link {
                     color: black;
+                }
+                &:has(#exit-button) {
+                    background-color: hsl(0, 60%, 40%);
+                    button[type=button] {
+                        color: white;
+                    }
                 }
             }
         }
     }
 
-    &__link, button[data-lang] {
+    &__link, button {
         display: block;
         padding: .7em 1em;
         color: white;

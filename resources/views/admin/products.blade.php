@@ -3,6 +3,7 @@
 <head>
     @include('blocks.head', ['page_title' => 'products'])
     <script src="https://cdn.tiny.cloud/1/99vzagw34guk5b2v26t6eyqlbkoqeztrz6zavydzprtsb8oi/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="/js/set_filename.js" referrerpolicy="origin"></script>
 </head>
 <body>
     <div class="page-wrapper s-p">
@@ -16,9 +17,15 @@
                     @csrf
                     <input type="text" name="name" data-validity_text="skipped_name" required data-placeholder_text="placeholder_product_name">
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
-                    <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
-                    <input id="input-file" type="file" accept="image/*" name="image" data-validity_text="skipped_image" required>
+                    
+                    <div class="admin-form__file-input">
+                        <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
+                        <div class="file-name-string"></div>
+                        <input id="input-file" type="file" accept="image/*" name="image" data-validity_text="skipped_image" onchange="setFilename(this.value)" required>
+                    </div>
+
                     <input type="number" name="cost" data-validity_text="skipped_cost" required data-placeholder_text="placeholder_cost">
+
                     <input type="submit" data-value_text="send">
                 </form>
             </div>
@@ -30,7 +37,7 @@
                     @foreach ($products as $product)
                         <div class="products__item item-products">
                             <h3 class="item-products__name">{{$product->name}}</h3>
-                            <p class="item-products__text">{{$product->text}}</p>
+                            <p class="item-products__text">{!!$product->text!!}</p>
                             <img class="item-products__image" src="{{$product->image_path}}" alt="">
                             <div class="item-products__price">{{$product->cost}} ₽</div>
                         </div>

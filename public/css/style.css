@@ -95,7 +95,7 @@ body {
   width: 100%;
   padding-block: 1.5em;
   font-size: var(--fz-400);
-  background-color: hsla(0deg, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -106,22 +106,22 @@ body {
   gap: 1em;
 }
 .nav__item {
-  border: 2px solid hsla(0deg, 0%, 100%, 0.5);
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
   border-radius: 1em;
   transition: 200ms;
 }
 .nav__item:first-child {
   background-color: rebeccapurple;
 }
-.nav__item:last-child {
+.nav__item:has([data-lang]) {
   position: relative;
   border: none;
   cursor: pointer;
 }
-.nav__item:last-child button[data-lang] {
+.nav__item:has([data-lang]) button[data-lang] {
   padding-left: 2.6rem;
 }
-.nav__item:last-child::before {
+.nav__item:has([data-lang])::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -133,6 +133,12 @@ body {
   pointer-events: none;
   background: url("./../img/lang_icon.svg") no-repeat center/contain;
 }
+.nav__item:has(#exit-button) {
+  background-color: hsl(0, 60%, 40%);
+}
+.nav__item:has(#exit-button) button[type=button] {
+  background-color: transparent;
+}
 @media (any-hover: hover) {
   .nav__item:hover {
     background-color: white;
@@ -143,14 +149,20 @@ body {
   .nav__item:hover:first-child .nav__link {
     color: white;
   }
-  .nav__item:hover:last-child::before {
+  .nav__item:hover:has([data-lang])::before {
     filter: invert(1);
   }
-  .nav__item:hover button[data-lang], .nav__item:hover .nav__link {
+  .nav__item:hover button, .nav__item:hover .nav__link {
     color: black;
   }
+  .nav__item:hover:has(#exit-button) {
+    background-color: hsl(0, 60%, 40%);
+  }
+  .nav__item:hover:has(#exit-button) button[type=button] {
+    color: white;
+  }
 }
-.nav__link, .nav button[data-lang] {
+.nav__link, .nav button {
   display: block;
   padding: 0.7em 1em;
   color: white;
@@ -244,14 +256,14 @@ body {
 .cart button[type=submit] {
   padding: 1em 2em;
   font-size: 1.5rem;
-  background-color: hsl(270deg, 50%, 40%);
+  background-color: hsl(270, 50%, 40%);
   color: #fff;
   border-radius: 1rem;
   transition: 200ms;
 }
 @media (any-hover: hover) {
   .cart button[type=submit]:hover {
-    background-color: hsl(270deg, 60%, 30%);
+    background-color: hsl(270, 60%, 30%);
   }
 }
 
@@ -387,11 +399,11 @@ h1.no-p {
 
 .admin-form {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 1rem;
   outline: 2px solid rebeccapurple;
 }
-.admin-form > *:not(input[type=submit], input[type=file]) {
+.admin-form > *:not(input[type=submit], input[type=file], .admin-form__file-input) {
   outline: 2px solid rebeccapurple;
 }
 .admin-form input[type=file] {
@@ -418,14 +430,21 @@ h1.no-p {
   color: white;
   cursor: pointer;
 }
-.admin-form > .label-file-btn {
-  width: fit-content;
+.admin-form .label-file-btn {
   padding: 1rem;
   color: white;
   background-color: rebeccapurple;
   cursor: pointer;
-  border: 2px dotted;
   outline: none !important;
+}
+.admin-form__file-input {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 2px dotted;
+}
+.admin-form__file-input .file-name-string {
+  padding-inline: 1rem;
 }
 
 .feedback-form {
@@ -439,7 +458,7 @@ h1.no-p {
   outline: 2px solid rebeccapurple;
 }
 .feedback-form input, .feedback-form textarea {
-  background-color: hsla(0deg, 0%, 100%, 0.8);
+  background-color: hsla(0, 0%, 100%, 0.8);
   backdrop-filter: blur(10px);
 }
 .feedback-form > * {
@@ -453,14 +472,14 @@ h1.no-p {
 .feedback-form button[type=submit] {
   border-radius: 1rem;
   padding: 1rem 2rem;
-  background-color: hsl(270deg, 50%, 40%);
+  background-color: hsl(270, 50%, 40%);
   color: white;
   cursor: pointer;
   transition: 200ms;
 }
 @media (any-hover: hover) {
   .feedback-form button[type=submit]:hover {
-    background-color: hsl(270deg, 60%, 30%);
+    background-color: hsl(270, 60%, 30%);
   }
 }
 
@@ -476,7 +495,7 @@ h1.no-p {
   display: grid;
   gap: 1rem;
   padding: 2rem;
-  border: 2px solid hsla(0deg, 0%, 0%, 0.5);
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
   border-radius: 2rem;
 }
 
@@ -501,4 +520,26 @@ h1.no-p {
   color: #fff;
 }
 
-/*# sourceMappingURL=style.css.map */
+.orders__body {
+  display: grid;
+  gap: 1.5rem;
+}
+.orders__item {
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+.orders__item > * {
+  padding: 0.5em;
+}
+.orders__item > *:not(:last-child) {
+  border-bottom: 1px solid silver;
+}
+.orders__date-created {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.orders__products span {
+  font-style: italic;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */

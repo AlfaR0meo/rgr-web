@@ -34,6 +34,7 @@ Route::get('/login', 'LoginController@get');
 Route::get('/async/get_products', 'CartController@getProducts');
 
 
+Route::get('/admin__logout', "LoginController@logout")->name("admin.logout");
 Route::post('/login', "LoginController@post")->name("login.send");
 Route::post('/cart', 'CartController@post')->name("cart.send");
 Route::post('/feedback', 'FeedbackController@post')->name("feedback.send");

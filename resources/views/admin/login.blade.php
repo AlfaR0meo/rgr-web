@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     @include('blocks.head', ['page_title' => 'login'])
 </head>
 <body>
     <div class="page-wrapper no-p">
-        
         @include("blocks.admin-nav")
 
         <section class="section login" style="background-image: linear-gradient(to top, rgb(0 0 0 / .7), transparent), url('./img/home/333.jpg');">

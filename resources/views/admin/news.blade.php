@@ -19,10 +19,12 @@
                     @csrf
                     <input type="text" name="title" data-validity_text="skipped_title" required data-placeholder_text="placeholder_title">
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
-                    <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
-                    
-                    <div class="file-name-string"></div>
-                    <input id="input-file" type="file" accept="image/*" name="image" data-validity_text="skipped_image" onchange="setFilename(this.value)" required>
+
+                    <div class="admin-form__file-input">
+                        <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
+                        <div class="file-name-string"></div>
+                        <input id="input-file" type="file" accept="image/*" name="image" data-validity_text="skipped_image" onchange="setFilename(this.value)" required>
+                    </div>
                     
                     <input type="submit" data-value_text="send">
                 </form>

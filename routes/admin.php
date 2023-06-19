@@ -17,5 +17,4 @@ Route::post('/admin__products', "ProductsController@post")->name("product.send")
 
 
 
-Route::get('/admin__logout', "LoginController@logout");
 Route::get('/get_orders', 'OrdersController@testOrders');

@@ -10,7 +10,9 @@ use App\Models\Order;
 class OrdersController extends Controller {
     public function get() {
         $orders = Order::getOrders();
-        return view('admin/orders')->with("orders", $orders);
+        $isAdmin = session("isAdmin");
+        $login = session("login");
+        return view('admin/orders', compact('orders', 'isAdmin', 'login'));
     }
 
     public function testOrders() {

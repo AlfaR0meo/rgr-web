@@ -404,5 +404,9 @@ let strings = {
     "no_file_selected": {
         "ru": "Файл не выбран",
         "en": "No file selected"
-    }
+    },
+    "exit": {
+        "ru": "Выйти",
+        "en": "Exit"
+    },
 };

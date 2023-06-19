@@ -13,9 +13,9 @@ class CheckAdmin {
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
     public function handle(Request $request, Closure $next): Response {
-        // if (!session()->has('isAdmin')) {
-        //     // return response()->view('user_log_in');
-        // }
+        if (session('isAdmin') != true) {
+            return response()->view('admin/login');
+        }
 
         return $next($request);
     }
