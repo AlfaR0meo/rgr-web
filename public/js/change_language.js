@@ -278,5 +278,9 @@ let strings = {
     "cashless": {
         "ru": "Безналичный",
         "en": "Cashless"
+    },
+    "payment_method": {
+        "ru": "Способ оплаты",
+        "en": "Payment method"
     }
 };
