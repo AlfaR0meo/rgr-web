@@ -334,5 +334,49 @@ let strings = {
     "send": {
         "ru": "Отправить",
         "en": "Send"
+    },
+    "email": {
+        "ru": "Электронная почта",
+        "en": "Email"
+    },
+    "phone": {
+        "ru": "Номер телефона",
+        "en": "Phone"
+    },
+    "address": {
+        "ru": "Адрес",
+        "en": "Address"
+    },
+    "work_hours": {
+        "ru": "Часы работы",
+        "en": "Work hours"
+    },
+    "address": {
+        "ru": "Адрес",
+        "en": "Address"
+    },
+    "work_hours": {
+        "ru": "Часы работы",
+        "en": "Work hours"
+    },
+    "mon-fri": {
+        "ru": "Пн-Пт",
+        "en": "Mon-fri"
+    },
+    "sat": {
+        "ru": "Сб",
+        "en": "Sat"
+    },
+    "from": {
+        "ru": "с",
+        "en": "from"
+    },
+    "to": {
+        "ru": "до",
+        "en": "to"
+    },
+    "address_value": {
+        "ru": "г. Севастополь, ул. Баха, 9/34",
+        "en": "Sevastopol, Bah's street, 9/34"
     }
 };
