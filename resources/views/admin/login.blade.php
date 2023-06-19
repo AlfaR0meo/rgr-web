@@ -5,13 +5,13 @@
     @include('blocks.head', ['page_title' => 'login'])
 </head>
 <body>
-    <div class="page-wrapper">
+    <div class="page-wrapper no-p">
         
         @include("blocks.admin-nav")
 
-        <section class="section">
+        <section class="section login" style="background-image: linear-gradient(to top, rgb(0 0 0 / .7), transparent), url('./img/home/333.jpg');">
             <div class="container">
-                <h1 data-text="login"></h1>
+                <h1 data-text="login" style="color: white;"></h1>
                 <form method="post" class="feedback-form" action="{{ route('login.send') }}">
                     @csrf
                     <input name="login" type="text" data-placeholder_text="print_login" required data-validity_text="skipped_login">

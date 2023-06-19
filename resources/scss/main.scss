@@ -88,6 +88,12 @@ h1 {
         min-height: 100vh;
         background: url("./../img/home/111.jpg") center / cover;
     }
+    &.login {
+        padding-top: calc(3rem + var(--nav-height-2rows));
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .card-row {
@@ -177,7 +183,7 @@ h1 {
     }
 
     input, textarea {
-        background-color: hsl(0, 0%, 100%, .5);
+        background-color: hsl(0, 0%, 100%, .8);
         backdrop-filter: blur(10px);
     }
 
@@ -190,12 +196,18 @@ h1 {
         min-height: 160px;
         max-height: 400px;
     }
-    input[type=submit] {
+    button[type=submit] {
         border-radius: 1rem;
         padding: 1rem 2rem;
-        background-color: rebeccapurple;
+        background-color: hsl(270, 50%, 40%);
         color: white;
         cursor: pointer;
+        transition: 200ms;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: hsl(270, 60%, 30%);
+            }
+        }
     }
 }
 
