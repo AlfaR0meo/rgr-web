@@ -390,5 +390,9 @@ let strings = {
     "placeholder_special_offer_title": {
         "ru": "Введите название акции",
         "en": "Print spectial offer title"
+    },
+    "placeholder_product_name": {
+        "ru": "Введите наименование товара",
+        "en": "Print product name"
     }
 };
