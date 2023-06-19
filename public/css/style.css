@@ -78,7 +78,7 @@ body {
 }
 
 [class$=container] {
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 0 1rem;
   margin: 0 auto;
 }
@@ -255,6 +255,29 @@ body {
   }
 }
 
+.contacts__body {
+  display: grid;
+  gap: 1.5rem;
+}
+.contacts__block {
+  margin-inline: auto;
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border: 2px dashed rebeccapurple;
+}
+.contacts__image {
+  width: 60px;
+}
+.contacts__content {
+  display: grid;
+  gap: 0.5rem;
+}
+.contacts__title {
+  font-size: 2rem;
+}
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
 :root {
   --ff-body: "Roboto Serif", serif;
