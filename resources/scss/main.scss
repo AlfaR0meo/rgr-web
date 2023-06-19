@@ -7,6 +7,8 @@
 
 // ■■■■■ НАВИГАЦИЯ ■■■■■■■■■■■■■■■
 @import "./nav";
+// ■■■■■ КОРЗИНА ■■■■■■■■■■■■■■■
+@import "./cart";
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
 // sass --watch resources/scss/main.scss public/css/style.css
 
@@ -243,69 +245,6 @@ h1 {
         font-weight: 500;
         background-color: #ff69b4;
         color: #fff;
-    }
-}
-
-.cart {
-    * {
-        //outline: 1px solid limegreen;
-    }
-    // .cart__body
-    &__row {
-        display: grid;
-        gap: 2rem;
-    }
-    // .cart__item
-    &__item {
-        display: grid;
-        gap: 1rem;
-        padding: 1rem;
-        border: 1px solid black;
-    }
-    // .cart__name
-    &__name {
-        font-size: 2rem;
-    }
-    // .cart__image
-    &__image {
-        max-height: 100px;
-    }
-    // .cart__price
-    &__price {
-        font-size: 2rem;
-    }
-    // .cart__count
-    &__count {
-        display: flex;
-        > * {
-            font-size: 2rem;
-            padding: 1rem;
-        }
-    }
-    // .cart__btn
-    &__btn {
-        padding: 0.4rem;
-        aspect-ratio: 1;
-    }
-    // .cart__btn--dec
-    &__btn--dec {
-    }
-    // .cart__count-number
-    &__count-number {
-        text-align: center;
-    }
-    // .cart__btn--inc
-    &__btn--inc {
-    }
-    &__total-price {
-        margin-top: 2rem;
-        width: fit-content;
-        margin-left: auto;
-        font-size: 2rem;
-        span {
-            font-weight: 700;
-            font-style: italic;
-        }
     }
 }
 

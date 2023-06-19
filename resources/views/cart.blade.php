@@ -12,10 +12,12 @@
 
         <section class="section cart">
             <div class="container">
+
                 <h1 data-text="cart"></h1>
+
                 <div class="cart__row">
                     <div class="cart__item">
-                        <h3 class="cart__name">Название товара</h3>
+                        <h3 class="cart__name">Виолончель</h3>
                         <img class="cart__image" src="./img/home/777.jpg" alt="">
                         <div class="cart__price">2000 ₽</div>
                         <div class="cart__count">
@@ -37,7 +39,12 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="cart__total-price">Итого: <span id="total-price"></span> ₽</div>
+
+                <div class="cart__total-price" data-text="total"><span id="total-price"></span> ₽</div>
+            
+                <form action="" class="cart__form">
+                    <input type="hidden" name="product_ids">
+                </form>
             </div>
         </section>
 
