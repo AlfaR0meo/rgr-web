@@ -382,5 +382,13 @@ let strings = {
     "choose_file": {
         "ru": "Выберите файл",
         "en": "Choose File"
+    },
+    "placeholder_cost": {
+        "ru": "Введите стоимость",
+        "en": "Print cost"
+    },
+    "placeholder_special_offer_title": {
+        "ru": "Введите название акции",
+        "en": "Print spectial offer title"
     }
 };

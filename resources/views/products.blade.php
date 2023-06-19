@@ -24,13 +24,6 @@
                             <button class="item-products__add-to-cart-btn" type="button"  data-product_id="{{$product->id}}" data-text="add_to_cart" onclick="addToCart(this.dataset.product_id)"></button>
                         </div>
                     @endforeach
-                    <!-- <div class="products__item item-products">
-                        <h3 class="item-products__name">Название товара</h3>
-                        <p class="item-products__text">Описание товара Описание товара Описание товара Описание товара</p>
-                        <img class="item-products__image" src="./img/home/555.jpg" alt="">
-                        <div class="item-products__price">1000 ₽</div>
-                        <button class="item-products__add-to-cart-btn" type="button">В корзину</button>
-                    </div> -->
                 </div>
             </div>
         </section>

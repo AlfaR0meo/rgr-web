@@ -15,7 +15,7 @@
 
                 <form method="post" class="admin-form" action="{{route('special_offer.send')}}" enctype="multipart/form-data">
                     @csrf
-                    <input type="text" name="title" data-validity_text="skipped_title" required>
+                    <input type="text" name="title" data-validity_text="skipped_title" required data-placeholder_text="placeholder_special_offer_title">
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
                     <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
                     <input id="input-file" type="file" name="image" data-validity_text="skipped_image" required>
@@ -26,9 +26,9 @@
 
         <section class="section special_offers">
             <div class="container">
-                <div class="special_offers__row">
+                <div class="card-row">
                     @foreach ($special_offers as $special_offer)
-                            <div class="special_offers__item">
+                            <div class="card-item">
                                 <h2>{{$special_offer->title}}</h2>
                                 <img src="{{$special_offer->image_path}}" alt="">
                                 <p>{!!$special_offer->text!!}</p>
