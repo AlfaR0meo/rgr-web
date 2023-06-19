@@ -28,10 +28,12 @@ Route::get('/feedback', 'FeedbackController@get');
 Route::get('/support', 'SupportController@get');
 Route::get('/location', 'LocationController@get'); 
 Route::get('/map', 'MapController@get');
+Route::get('/login', 'LoginController@get');
 
 
 Route::get('/async/get_products', 'CartController@getProducts');
 
 
+Route::post('/login', "LoginController@post")->name("login.send");
 Route::post('/cart', 'CartController@post')->name("cart.send");
 Route::post('/feedback', 'FeedbackController@post')->name("feedback.send");

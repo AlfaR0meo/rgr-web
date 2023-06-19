@@ -34,9 +34,21 @@ function changeLanguage(language) {
     }
 
     let translatable_placeholders = document.querySelectorAll("[data-placeholder_text]");
-
     for (let element of translatable_placeholders) {
-        element.placeholder = strings[element.dataset.placeholder_text][language];
+        try {
+            element.placeholder = strings[element.dataset.placeholder_text][language];
+        } catch (error) {
+            element.placeholder = "Перевод отсутствует";
+        }
+    }
+
+    let translatable_values = document.querySelectorAll("[data-value_text]");
+    for (let element of translatable_values) {
+        try {
+            element.value = strings[element.dataset.value_text][language];
+        } catch (error) {
+            element.value = "Перевод отсутствует";
+        }
     }
 }
 
@@ -306,5 +318,21 @@ let strings = {
     "make_order": {
         "ru": "Оформить заказ",
         "en": "Make order"
+    },
+    "login": {
+        "ru": "Вход",
+        "en": "Login"
+    },
+    "print_login": {
+        "ru": "Введите логин",
+        "en": "Print login"
+    },
+    "print_password": {
+        "ru": "Введите пароль",
+        "en": "Print password"
+    },
+    "send": {
+        "ru": "Отправить",
+        "en": "Send"
     }
 };
