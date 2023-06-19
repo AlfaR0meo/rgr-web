@@ -3,6 +3,9 @@ function addToCart(id, change_number = false) {
         sessionStorage.setItem("cart", id);
     } else {
         let cart = sessionStorage.getItem("cart").split(",");
+        if (sessionStorage.getItem("cart") == "") {
+            cart = [];
+        }
         cart.push(id);
         sessionStorage.setItem("cart", cart);
     }
@@ -42,6 +45,8 @@ function onNumberChange(id) {
         let cost_element = document.querySelector(`.cart__item[data-product_id="${id}"] .cart__price`);
         sum += parseFloat(cost_element.textContent) * count.textContent;
     }
+
+    document.querySelector('input[name="product_ids"]').value = sessionStorage.getItem("cart");
 
 
     document.querySelector("#total-price").textContent = sum;
