@@ -250,5 +250,9 @@ let strings = {
     "add_to_cart": {
         "ru": "В корзину",
         "en": "Add to cart"
+    },
+    "total": {
+        "ru": "Итого:",
+        "en": "Total:"
     }
 };
