@@ -202,17 +202,57 @@ body {
   text-align: right;
   font-size: 2rem;
   border: 2px solid forestgreen;
+  border-radius: 1rem;
 }
 .cart__total-price span:last-child {
   font-weight: 700;
   font-style: italic;
 }
 .cart__form {
+  margin-top: 2rem;
+  padding: 2rem;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
+  outline: 2px solid rebeccapurple;
+  border-radius: 1rem;
 }
 .cart__form-group {
   display: grid;
+}
+.cart__form-group:first-child {
+  display: none;
+}
+.cart__form-group label {
+  margin-bottom: 0.5em;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.cart__form-group select {
+  padding: 1em;
+  width: fit-content;
+  border: 1px solid black;
+}
+.cart__form-group select option {
+  background-color: #fff;
+  color: #000;
+}
+.cart__form-group input {
+  width: 50%;
+  padding: 1em;
+  border: 1px solid black;
+}
+.cart button[type=submit] {
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  background-color: hsl(270deg, 50%, 40%);
+  color: #fff;
+  border-radius: 1rem;
+  transition: 200ms;
+}
+@media (any-hover: hover) {
+  .cart button[type=submit]:hover {
+    background-color: hsl(270deg, 60%, 30%);
+  }
 }
 
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */

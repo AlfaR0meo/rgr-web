@@ -59,17 +59,60 @@
         text-align: right;
         font-size: 2rem;
         border: 2px solid forestgreen;
+        border-radius: 1rem;
         span:last-child {
             font-weight: 700;
             font-style: italic;
         }
     }
+
+
+
     &__form {
+        margin-top: 2rem;
+        padding: 2rem;
         display: grid;
-        gap: 1rem;
+        gap: 2rem;
+        outline: 2px solid rebeccapurple;
+        border-radius: 1rem;
     }
     &__form-group {
         display: grid;
+        &:first-child {
+            display: none;
+        }
+        label {
+            margin-bottom: 0.5em;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        select {
+            padding: 1em;
+            width: fit-content;
+            border: 1px solid black;
+            option {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+        input {
+            width: 50%;
+            padding: 1em;
+            border: 1px solid black;
+        }
+    }
+    button[type=submit] {
+        padding: 1em 2em;
+        font-size: 1.5rem;
+        background-color: hsl(270, 50%, 40%);
+        color: #fff;
+        border-radius: 1rem;
+        transition: 200ms;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: hsl(270, 60%, 30%);
+            }
+        }
     }
     // * {
     //     outline: 1px solid limegreen;
