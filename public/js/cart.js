@@ -1,4 +1,7 @@
 function initializeCart() {
+    if (sessionStorage.getItem("cart") == undefined) {
+        sessionStorage.setItem("cart", "");
+    }
     let cart = getCart();
     let products = document.querySelectorAll(".cart__item");
     for (let i = 0; i < products.length; i++) {
