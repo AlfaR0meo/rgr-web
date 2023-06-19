@@ -5,7 +5,7 @@
     <script src="https://cdn.tiny.cloud/1/99vzagw34guk5b2v26t6eyqlbkoqeztrz6zavydzprtsb8oi/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
-    <div class="page-wrapper">
+    <div class="page-wrapper s-p">
         
         @include("blocks.admin-nav")
         <section class="section">
@@ -16,30 +16,32 @@
                     @csrf
                     <input type="text" name="name" data-validity_text="skipped_name" required data-placeholder_text="placeholder_product_name">
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
-                    <input type="file" name="image" data-validity_text="skipped_image" required>
+                    <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
+                    <input id="input-file" type="file" name="image" data-validity_text="skipped_image" required>
                     <input type="number" name="cost" data-validity_text="skipped_cost" required data-placeholder_text="placeholder_cost">
                     <input type="submit" data-value_text="send">
                 </form>
             </div>
         </section>
+
         <section class="section products">
-            <div class="products__row">
-                @foreach ($products as $product)
-                    <div class="products__item item-products">
-                        <h3 class="item-products__name">{{$product->name}}</h3>
-                        <p class="item-products__text">{{$product->text}}</p>
-                        <img class="item-products__image" src="{{$product->image_path}}" alt="">
-                        <div class="item-products__price">{{$product->cost}} ₽</div>
-                        <button class="item-products__add-to-cart-btn" type="button"  data-product_id="{{$product->id}}" data-text="add_to_cart" onclick="addToCart(this.dataset.product_id)"></button>
-                    </div>
-                @endforeach
+            <div class="container">
+                <div class="products__row admin">
+                    @foreach ($products as $product)
+                        <div class="products__item item-products">
+                            <h3 class="item-products__name">{{$product->name}}</h3>
+                            <p class="item-products__text">{{$product->text}}</p>
+                            <img class="item-products__image" src="{{$product->image_path}}" alt="">
+                            <div class="item-products__price">{{$product->cost}} ₽</div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </section>
 
 
         
     </div>
-
     <script>
         tinymce.init({
             selector: 'textarea',
