@@ -68,7 +68,7 @@
                         <input name="phone" type="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required data-validity_text="wrong_or_missing_phone">
                     </div>
 
-                    <button class="button" type="submit">Оформить заказ</button>
+                    <button class="button" type="submit" data-text="make_order"></button>
 
                 </form>
 

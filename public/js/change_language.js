@@ -302,5 +302,9 @@ let strings = {
     "wrong_or_missing_phone": {
         "ru": "Номер телефона отсутствует или введен неверно",
         "en": "Wrong or missing phone number"
+    },
+    "make_order": {
+        "ru": "Оформить заказ",
+        "en": "Make order"
     }
 };
