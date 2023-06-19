@@ -42,15 +42,17 @@
 
                 <div class="cart__total-price"><span data-text="total">Итого: </span> <span id="total-price"></span> ₽</div>
             
-                <form action="" class="cart__form">
+                <form method="post" action="{{ route('cart.send') }}" class="cart__form">
 
+                    @csrf
+                
                     <div class="cart__form-group">
                         <input name="product_ids" type="hidden">
                     </div>
 
                     <div class="cart__form-group">
-                        <label for="delivery_method" data-text="delivery_method"></label>
-                        <select name="delivery_method" id="delivery_method">
+                        <label data-text="delivery_method"></label>
+                        <select name="delivery_method">
                             <option value="pickup" data-text="pickup"></option>
                             <option value="courier" data-text="courier"></option>
                             <option value="mail" data-text="mail"></option>
@@ -58,18 +60,26 @@
                     </div>
 
                     <div class="cart__form-group">
-                        <label for="payment_method" data-text="payment_method"></label>
-                        <select name="payment_method" id="payment_method">
-                            <option value="cash" data-text="cash">Нал</option>
-                            <option value="cashless" data-text="cashless">Безнал</option>
+                        <label data-text="payment_method"></label>
+                        <select name="payment_method">
+                            <option value="cash" data-text="cash"></option>
+                            <option value="cashless" data-text="cashless"></option>
                         </select>
                     </div>
 
+                    <div class="cart__form-group">
+                        <label data-text="fullname_cart"></label>
+                        <input name="fullname" type="text">
+                    </div>
+
+                    <div class="cart__form-group">
+                        <label data-text="phone_cart"></label>
+                        <input name="phone" type="phone">
+                    </div>
+
+                    <button class="button" type="submit">Оформить заказ</button>
+
                 </form>
-
-
-
-
 
             </div>
         </section>

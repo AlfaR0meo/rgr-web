@@ -282,5 +282,13 @@ let strings = {
     "payment_method": {
         "ru": "Способ оплаты",
         "en": "Payment method"
+    },
+    "fullname_cart": {
+        "ru": "ФИО",
+        "en": "Fullname"
+    },
+    "phone_cart": {
+        "ru": "Номер телефона",
+        "en": "Phone number"
     }
 };
