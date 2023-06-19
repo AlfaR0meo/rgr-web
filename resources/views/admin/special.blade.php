@@ -18,7 +18,7 @@
                     <input type="text" name="title" data-validity_text="skipped_title" required data-placeholder_text="placeholder_special_offer_title">
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
                     <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
-                    <input id="input-file" type="file" name="image" data-validity_text="skipped_image" required>
+                    <input id="input-file" type="file" accept="image/*" name="image" data-validity_text="skipped_image" required>
                     <input type="submit" data-value_text="send">
                 </form>
             </div>

@@ -17,7 +17,7 @@
                     <input type="text" name="name" data-validity_text="skipped_name" required data-placeholder_text="placeholder_product_name">
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
                     <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
-                    <input id="input-file" type="file" name="image" data-validity_text="skipped_image" required>
+                    <input id="input-file" type="file" accept="image/*" name="image" data-validity_text="skipped_image" required>
                     <input type="number" name="cost" data-validity_text="skipped_cost" required data-placeholder_text="placeholder_cost">
                     <input type="submit" data-value_text="send">
                 </form>
