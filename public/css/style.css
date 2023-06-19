@@ -207,6 +207,17 @@ body {
   font-weight: 700;
   font-style: italic;
 }
+.cart__form {
+  display: grid;
+  gap: 1rem;
+}
+.cart__form-group {
+  display: grid;
+}
+.cart * {
+  outline: 1px solid limegreen;
+}
+
 /* ■■■■■ СТИЛИ САЙТА ■■■■■■■■■■■■■■■■■ */
 :root {
   --ff-body: "Roboto Serif", serif;

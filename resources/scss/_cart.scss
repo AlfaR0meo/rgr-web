@@ -1,7 +1,4 @@
 .cart {
-    * {
-        //outline: 1px solid limegreen;
-    }
     // .cart__body
     &__row {
         display: grid;
@@ -68,6 +65,13 @@
         }
     }
     &__form {
-
+        display: grid;
+        gap: 1rem;
+    }
+    &__form-group {
+        display: grid;
+    }
+    * {
+        outline: 1px solid limegreen;
     }
 }
