@@ -151,13 +151,23 @@ h1 {
         outline: 2px solid rebeccapurple;
     }
 
-    input[type=file]::-webkit-file-upload-button {
-        padding: 1rem;
-        color: white;
-        background-color: rebeccapurple;
-        cursor: pointer;
-    }
+    // input[type=file]::-webkit-file-upload-button {
+    //     padding: 1rem;
+    //     color: white;
+    //     background-color: rebeccapurple;
+    //     cursor: pointer;
+    // }
 
+    input[type=file] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        appearance: none;
+    }
     input[type=text] {
         padding: 1em;
     }
@@ -168,6 +178,16 @@ h1 {
         background-color: rebeccapurple;
         color: white;
         cursor: pointer;
+    }
+
+    > .label-file-btn {
+        width: fit-content;
+        padding: 1rem;
+        color: white;
+        background-color: rebeccapurple;
+        cursor: pointer;
+        border: 2px dotted;
+        outline: none !important;
     }
 }
 

@@ -5,7 +5,7 @@
     <script src="https://cdn.tiny.cloud/1/99vzagw34guk5b2v26t6eyqlbkoqeztrz6zavydzprtsb8oi/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
-    <div class="page-wrapper">
+    <div class="page-wrapper s-p">
         
         @include("blocks.admin-nav")
 
@@ -13,16 +13,17 @@
             <div class="container">
                 <h1 data-text="special_offers"></h1>
 
-                <form method="post" class="form" action="{{route('special_offer.send')}}" enctype="multipart/form-data">
+                <form method="post" class="admin-form" action="{{route('special_offer.send')}}" enctype="multipart/form-data">
                     @csrf
                     <input type="text" name="title" data-validity_text="skipped_title" required>
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
-                    <input type="file" name="image" data-validity_text="skipped_image" required>
-                    <input type="submit" value="отправить">
+                    <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
+                    <input id="input-file" type="file" name="image" data-validity_text="skipped_image" required>
+                    <input type="submit" data-value_text="send">
                 </form>
             </div>
         </section>
-        
+
         <section class="section special_offers">
             <div class="container">
                 <div class="special_offers__row">

@@ -394,11 +394,15 @@ h1.no-p {
 .admin-form > *:not(input[type=submit], input[type=file]) {
   outline: 2px solid rebeccapurple;
 }
-.admin-form input[type=file]::-webkit-file-upload-button {
-  padding: 1rem;
-  color: white;
-  background-color: rebeccapurple;
-  cursor: pointer;
+.admin-form input[type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  appearance: none;
 }
 .admin-form input[type=text] {
   padding: 1em;
@@ -410,6 +414,15 @@ h1.no-p {
   background-color: rebeccapurple;
   color: white;
   cursor: pointer;
+}
+.admin-form > .label-file-btn {
+  width: fit-content;
+  padding: 1rem;
+  color: white;
+  background-color: rebeccapurple;
+  cursor: pointer;
+  border: 2px dotted;
+  outline: none !important;
 }
 
 .feedback-form {

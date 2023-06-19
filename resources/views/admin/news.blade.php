@@ -17,11 +17,13 @@
                     @csrf
                     <input type="text" name="title" data-validity_text="skipped_title" required data-placeholder_text="placeholder_title">
                     <textarea type="text" name="text" data-validity_text="skipped_text"></textarea>
-                    <input type="file" name="image" data-validity_text="skipped_image" required>
+                    <label class="label-file-btn" for="input-file" data-text="choose_file"></label>
+                    <input id="input-file" type="file" name="image" data-validity_text="skipped_image" required>
                     <input type="submit" data-value_text="send">
                 </form>
             </div>
         </section>
+
         <section class="section news">
             <div class="container">
                 <div class="card-row">

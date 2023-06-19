@@ -378,5 +378,9 @@ let strings = {
     "address_value": {
         "ru": "г. Севастополь, ул. Баха, 9/34",
         "en": "Sevastopol, Bah's street, 9/34"
+    },
+    "choose_file": {
+        "ru": "Выберите файл",
+        "en": "Choose File"
     }
 };
