@@ -254,5 +254,29 @@ let strings = {
     "total": {
         "ru": "Итого:",
         "en": "Total:"
+    },
+    "pickup": {
+        "ru": "Самовывоз",
+        "en": "Pickup"
+    },
+    "courier": {
+        "ru": "Курьер",
+        "en": "Courier"
+    },
+    "mail": {
+        "ru": "Почта",
+        "en": "Mail"
+    },
+    "delivery_method": {
+        "ru": "Способ доставки",
+        "en": "Delivery method"
+    },
+    "cash": {
+        "ru": "Наличными",
+        "en": "Cash"
+    },
+    "cashless": {
+        "ru": "Безналичный",
+        "en": "Cashless"
     }
 };
