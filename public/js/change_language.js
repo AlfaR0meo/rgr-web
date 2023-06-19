@@ -290,5 +290,17 @@ let strings = {
     "phone_cart": {
         "ru": "Номер телефона",
         "en": "Phone number"
+    },
+    "choose_payment_method": {
+        "ru": "Выберите способ оплаты",
+        "en": "Choose payment method"
+    },
+    "choose_delivery_method": {
+        "ru": "Выберите способ доставки",
+        "en": "Сhoose delivery method"
+    },
+    "wrong_or_missing_phone": {
+        "ru": "Номер телефона отсутствует или введен неверно",
+        "en": "Wrong or missing phone number"
     }
 };

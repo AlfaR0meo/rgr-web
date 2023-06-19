@@ -16,16 +16,6 @@
                 <h1 data-text="cart"></h1>
 
                 <div class="cart__row">
-                    <!-- <div class="cart__item">
-                        <h3 class="cart__name">Виолончель</h3>
-                        <img class="cart__image" src="./img/home/777.jpg" alt="">
-                        <div class="cart__price">2000 ₽</div>
-                        <div class="cart__count">
-                            <button class="cart__btn cart__btn--dec" type="button">-</button>
-                            <div class="cart__count-number">1</div>
-                            <button class="cart__btn cart__btn--inc" type="button">+</button>
-                        </div>
-                    </div> -->
                     @foreach ($products as $product)
                         <div class="cart__item" data-product_id="{{$product->id}}">
                             <h3 class="cart__name">{{$product->name}}</h3>
@@ -43,7 +33,6 @@
                 <div class="cart__total-price"><span data-text="total">Итого: </span> <span id="total-price"></span> ₽</div>
             
                 <form method="post" action="{{ route('cart.send') }}" class="cart__form">
-
                     @csrf
                 
                     <div class="cart__form-group">
@@ -52,7 +41,8 @@
 
                     <div class="cart__form-group">
                         <label data-text="delivery_method"></label>
-                        <select name="delivery_method">
+                        <select name="delivery_method" required data-validity_text="choose_delivery_method">
+                            <option selected disabled data-text="choose_delivery_method" value=""></option>
                             <option value="pickup" data-text="pickup"></option>
                             <option value="courier" data-text="courier"></option>
                             <option value="mail" data-text="mail"></option>
@@ -61,7 +51,8 @@
 
                     <div class="cart__form-group">
                         <label data-text="payment_method"></label>
-                        <select name="payment_method">
+                        <select name="payment_method" required data-validity_text="choose_payment_method"> 
+                            <option selected disabled data-text="choose_payment_method" value=""></option>
                             <option value="cash" data-text="cash"></option>
                             <option value="cashless" data-text="cashless"></option>
                         </select>
@@ -69,12 +60,12 @@
 
                     <div class="cart__form-group">
                         <label data-text="fullname_cart"></label>
-                        <input name="fullname" type="text">
+                        <input name="fullname" type="text" required data-validity_text="skipped_fullname">
                     </div>
 
                     <div class="cart__form-group">
                         <label data-text="phone_cart"></label>
-                        <input name="phone" type="phone">
+                        <input name="phone" type="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required data-validity_text="wrong_or_missing_phone">
                     </div>
 
                     <button class="button" type="submit">Оформить заказ</button>
