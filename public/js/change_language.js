@@ -378,5 +378,13 @@ let strings = {
     "address_value": {
         "ru": "г. Севастополь, ул. Баха, 9/34",
         "en": "Sevastopol, Bah's street, 9/34"
+    },
+    "placeholder_cost": {
+        "ru": "Введите стоимость",
+        "en": "Print cost"
+    },
+    "placeholder_special_offer_title": {
+        "ru": "Введите название акции",
+        "en": "Print spectial offer title"
     }
 };
