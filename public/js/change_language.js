@@ -55,8 +55,14 @@ function changeLanguage(language) {
 function switchLanguage() {
     let languageSwitchButton = document.querySelector('button[data-lang]');
     languageSwitchButton.dataset.lang = languageSwitchButton.dataset.lang == "ru" ? "en" : "ru";
-
     changeLanguage(languageSwitchButton.dataset.lang);
+    try {
+        if (document.querySelector('[type="file"]').value == "") {
+            setFilename("")
+        }
+    } catch {
+        
+    }
 }
 
 function initializeLanguageSwitch() {
@@ -394,5 +400,9 @@ let strings = {
     "placeholder_product_name": {
         "ru": "Введите наименование товара",
         "en": "Print product name"
+    },
+    "no_file_selected": {
+        "ru": "Файл не выбран",
+        "en": "No file selected"
     }
 };
